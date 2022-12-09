@@ -1,0 +1,54 @@
+.caro{
+margin: 3%;
+}
+
+.Carousel {
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+
+}
+
+/* .Carousel.Item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+
+.img{
+    height: 500px;
+    width: 500px;
+    /* margin: 0 auto 3%; */
+    margin-left: 33%;
+    margin-right: 33%;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    /* padding-left: 40px; */
+    /* margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    
+}
+
+.caption{
+    position: relative;
+    left: 0;
+    right: 0;
+    /* bottom: 1.25rem; */
+    /* padding-top: 1.25rem; */
+    margin: auto;
+    color: #fefefe;
+    text-align: center;
+    width: 75%;
+}
+.img1{
+    width: 800px;
+    height: 800px;
+    margin-left: 27%;
+    margin-right: 33%;
+}

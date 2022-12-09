@@ -4,9 +4,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@lottiefiles/lottie-player": "^1.6.2",
+    "@lottiefiles/react-lottie-player": "^3.5.0",
+    "@material/card": "^14.0.0",
+    "@mui/material": "^5.10.17",
+    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-bootstrap-carousel": "^4.1.1",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-iframe": "^1.8.5",
+    "react-parallax-tilt": "^1.7.75",
+    "react-router-dom": "^6.4.5",
+    "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.8",
+    "typed.js": "^2.0.12"
   },
   "scripts": {
     "start": "react-scripts start",

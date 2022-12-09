@@ -1,0 +1,95 @@
+.iterative-space{
+    color:black;
+}
+
+
+.background-1{
+    background-color: white;
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 100px;
+    padding: 15px;
+    border-width: 25px;
+    background-repeat: repeat;
+}
+.img-wrapper img{
+    display: block;
+    
+}
+.room-desc{
+    max-width: 500px;
+    padding: 10px;
+    align-self: center;
+}
+
+p, b, li{
+    line-height: 150%;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-block-start: 0.5em;
+    margin-block-end: 0;
+    padding-top: 5px;
+  }
+
+h2, h3, h4{
+    padding-top: 15px;
+}
+
+.kiosk-pic {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.kiosk{
+    max-width: 70%;
+}
+
+.persona{
+    max-width: 70%;
+}
+
+.persona-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.story-card-responsive {
+    margin-top: 15px;
+}
+
+.header {
+    margin-top: -25px;
+}
+
+.lofi-space {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.vsg-container{
+    display: flex;
+    justify-content: center;
+}
+
+.vsg{
+    width: 800px;
+}
+
+.finished{
+    font-size: 30px;
+    text-decoration: none;
+    /* color: black; */
+    font-weight: bold;
+}
+
+.block {
+    padding-top: 30px;
+}
