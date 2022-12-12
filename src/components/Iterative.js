@@ -7,21 +7,35 @@ import './RoomCarousel.css';
 import RoomCarousel2 from "./RoomCarousel2";
 import IFrame from 'react-iframe';
 import RoomCarousel3 from "./RoomCarousel3";
-
+import ScrollToTop from "./ScrollToTop";
+import { Parallax, ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
+import roomPhone from "../images/roomkast-phones.png";
 
 const Iterative = () => {
-    return  <div className="background">
-    <div className="background-1">
+    return  <div className="background-iterative">
+        <ScrollToTop/>
             
     <div className="iterative-space">
-   <h1> Iterative Design: Prototyping a Roommate-Matching App </h1>
+        <div className="iterative-intro-words"> 
+   <h1 className="header-iterative"> Iterative Design </h1>
+   <h3> Prototyping a Roommate-Matching App </h3>
+   <ParallaxProvider>
+            <Parallax
+                translateX={['-200px', '100px']}
+                scale={[0.75, 1]}
+                easing="easeInQuad"
+                >
+            <img src={roomPhone} className="roomkast-header-img"/>
+            </Parallax>
+            </ParallaxProvider>
+   </div>
+   <h2 className="h2">00. Context </h2>
    <div>     In this project, we were assigned to choose an emerging startup and design an ideal product interface.
        This was a group project with 4 members total; the group evenly shared responsibilities of the design process.
         We ideated and designed all of our interfaces from scratch. Additionally, a requirement of the assingment
         was that we could not look at any of the startup’s existing designs, resulting in our unique interpretation
         of how we thought the app should look like and function as.</div>
         
-        <hr/>
         <div class="section">
             <div class="subsection">
                 <h2>01. Research</h2>
@@ -47,7 +61,6 @@ const Iterative = () => {
             <p>Given the popularity of dating apps amongst young people, we thought Roomkast users would feel the most familiar with a similar interface but centered around finding a roommate rather than a romantic partner.</p>
         </div>
       </div>
-      <hr/>
       <div class="section">
         <div class="subsection">
             <h2>02. Ideating the Design </h2>
@@ -69,7 +82,6 @@ const Iterative = () => {
         <p>From our discussion, we combined our sketches to produce a final set of wireframes we would use to create our high-fidelity prototype.</p>
         
         <RoomCarousel2/>
-        <hr/>
         <div class="section">
             <div class="subsection">
                 <h2>03. Prototyping the Roomkast App</h2>
@@ -136,7 +148,6 @@ const Iterative = () => {
             allowfullscreen>
         </IFrame>
       </div>
-      <hr />
       <div class="section">
         <div class="subsection">
             <h2>04. Remote Usability Testing</h2>
@@ -219,7 +230,6 @@ const Iterative = () => {
         </div>
         <div class="section">
             <div class="subsection">
-            <hr/>
                 <h2>05. Reflection</h2>
             <ol>
                 <li>We were able to turn our wireframes into an intuitive and functional prototype</li>
@@ -231,7 +241,6 @@ const Iterative = () => {
 
             </div>
         </div>
-    </div>
     </div>
 
 };

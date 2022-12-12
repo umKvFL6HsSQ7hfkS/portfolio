@@ -5,14 +5,22 @@ import { useRef } from 'react';
 import { useEffect } from 'react';
 import { Link } from "react-scroll";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
-import Tilt from "react-parallax-tilt";
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
 import { NavLink } from "react-router-dom";
+import redMock from "../src/images/redesign-mockup.png";
+import animePic2 from "./images/animecard2.png";
+import roomCover2 from "./images/roomkastCover2.png";
+import personas from "./images/personas.png";
+import dumpling from "./images/dumpling.png"
+import noodles from "./images/noodles.png";
+import 'aos/dist/aos.css';
+
+import Draggable from 'react-draggable';
+import { Resizable } from 're-resizable';
+import * as AOS from 'aos/dist/aos.js';
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
+    
 function App() {
 
       // Create Ref element.
@@ -35,6 +43,10 @@ function App() {
           typed.destroy();
         };
       }, []);
+
+      useEffect(() => {
+        AOS.init();
+      }, [])
 
   return (
     <div className="App">
@@ -59,193 +71,193 @@ function App() {
           </ul>
           
         </nav>
-        <Player
-            autoplay
-            loop
-            src="https://assets3.lottiefiles.com/packages/lf20_nz20vA.json"
-            style={{ height: '100px', width: '100px' }}
-          >
-            <Controls visible={false}  />
-          </Player>
       </header>
       <section className="home">
         
       <p className="words" ref={el}></p>
-        
-      </section>
-      <section className="projects">PROJECTS
+      <div className='drag-notice'> 
+      (Click to drag the food around!)</div>
 
-      <div className='cards'> 
-      <Tilt className='tilt-card'
-        
-        scale={.9}
-        tiltMaxAngleX={10} 
-        tiltMaxAngleY={10} 
-        perspective={750} 
-        >     
-        
-        <NavLink to={'../Storyboard'} target="_blank" style={{ textDecoration: 'none' }} >
-        <Card className="story-card" >
-          <CardActionArea className="action">
-            <CardContent className="head">
-              <Typography gutterBottom variant="h5" component="div" fontSize={30} className="header">
-              <br/>
-                Storyboard & Personas
-              </Typography>
-              <Typography className="content">
-                  <br/>
-              In this project, I considered the effectiveness of the Brown Mailroom kiosks as interfaces for retrieving mail. 
-              I centered the personas and storyboards around the kiosk -- how people interact with the kiosk day to day and 
-              how they were feeling when using it. 
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        </NavLink> 
-    </Tilt>
-
-    <Tilt className='tilt-card'
-    // glareEnable={true} 
-    // glareMaxOpacity={0.45}
-    scale={.9}
-    tiltMaxAngleX={10} 
-    tiltMaxAngleY={10} 
-    perspective={750} 
-    // glareColor="red"
-    // glarePosition="all"
-    >
-    <NavLink to={'../Iterative'} target="_blank" style={{ textDecoration: 'none' }} >
-    <Card className="story-card" >
-      <CardActionArea className="action">
-        <CardContent className="head">
-          <Typography gutterBottom variant="h5" component="div" fontSize={30} className="header" className="header">
-          <br/>
-            Iterative Design
-          </Typography>
-          <Typography className="content">
-              <br/>
-              In this project, I worked in a group to chose an emerging startup and designed their product’s interface. 
-              We ideated and designed all of our interfaces from scratch, without looking at any of the startup’s existing designs.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-        </Card>
-        </NavLink> 
-      </Tilt>
-   
-    <Tilt className='tilt-card'
-        scale={.9}
-        tiltMaxAngleX={10} 
-        tiltMaxAngleY={10} 
-        perspective={750} 
-        >
-    <NavLink to={'../Redesign'} target="_blank" style={{ textDecoration: 'none' }} >
-    <Card className="story-card" >
-      <CardActionArea className="action">
-        <CardContent className="head">
-          <Typography gutterBottom variant="h5" component="div" fontSize={30} className="header" className="header">
-          <br/>
-            Responsive Redesign
-          </Typography>
-          <Typography className="content">
-              <br/>
-              The goal of this project was to pick a poorly designed website and redesign it into something "better". I focused
-              on improving the sites' usability by creating more structure hierarchy, changing the color scheme, and providing
-              a more responsive webpage. 
-          </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-          </NavLink> 
-        </Tilt>
-
-
-  <Tilt className='tilt-card'
-        scale={.9}
-        tiltMaxAngleX={10} 
-        tiltMaxAngleY={10} 
-        perspective={750} 
-        >
-    <NavLink to={'../AnimeList'} target="_blank" style={{ textDecoration: 'none' }} >
-    <Card className="story-card" >
-      <CardActionArea className="action">
-        <CardContent className="head">
-          <Typography gutterBottom variant="h5" component="div" fontSize={30} className="header" className="header">
-          <br/>
-            My Anime List
-          </Typography>
-          <Typography className="content">
-              <br/>
-              In this project, I implemented React in order to filter, sort, and aggregate different animes. The React app allows
-              users to add different anime to their "Favorites" list, stack filters, and sort all at the same time. 
-          </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        </NavLink> 
-        </Tilt>
-        </div>
+      {/* <Player className='ramen'
+            autoplay
+            loop
+            src="https://lottie.host/716605c7-af03-40f1-adcb-6bd563a98cff/ZVBbxzgrH1.json"
+            style={{ height: '300px', width: '300px' }}
+          >
+            <Controls visible={false}  />
+          </Player> */}
+          <div className='food-drag'> 
+      <Draggable > 
+      <Resizable
+        defaultSize={{
+          width: 300,
+          height: 200
+        }}
+        style={{
+          background: `url(${dumpling})`,
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
+        }}
+        lockAspectRatio={true}
+      >
+      </Resizable>
+      </Draggable>
+      <Draggable > 
+      <Resizable
+        defaultSize={{
+          width: 170,
+          height: 190
+        }}
+        style={{
+          background: `url(${noodles})`,
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
+        }}
+        lockAspectRatio={true}
+      >
+      </Resizable>
+      </Draggable>
+      </div>
       </section>
 
-      <section className="about">ABOUT ME
-      <div className="abt-me">
-    
-    <Tilt className='tilt-card'
-    // glareEnable={true} 
-    // glareMaxOpacity={0.45}
-    scale={.9}
-    tiltMaxAngleX={10} 
-    tiltMaxAngleY={10} 
-    perspective={750} 
-    // glareColor="red"
-    // glarePosition="all"
-    >    
-    <Card  className="story-card">
-      <CardActionArea>
-        <CardContent>
       
-          <Typography gutterBottom variant="h5" component="div" fontSize={30}>
-            A little bit about me
-          </Typography>
-          <Typography  >
-          I'm a student at Brown University interested in user interface and user experience. 
-    This year, I was able to take UI/UX, a class that allowed me to focus on just that!
+      <section className="projects">
+      
+        <div className='project-title' data-aos="fade-up"> 
+        <p className='section-header'> This Semester's Menu </p>
+      <Player className='fork'
+            autoplay
+            loop
+            src="https://lottie.host/7187a5f5-f425-4515-965e-8353293158cd/2p7Rx7jM5k.json"
+            style={{ height: '200px', width: '200px' }}
+          >
+            <Controls visible={false}  />
+          </Player>
+          </div>
+          
+      <div className='cards' > 
+        <NavLink to={'../Storyboard'} target="_blank" style={{ textDecoration: 'none' }} data-aos="fade-right">
+ 
+        <div className='plate'> 
+        <div className='plate overlay'> 
+        <div className='front'> 
+        <h4> Storyboard & Personas</h4>
+        <p> Considering the effectiveness of the Brown Mailroom Kiosk.</p>
+        </div>
+        <div className='back'> 
+        <img src={personas} className='anime-img'/>
+        </div>
+        </div>
+        </div>
+        </NavLink> 
+        
+    <NavLink to={'../Iterative'} target="_blank" style={{ textDecoration: 'none' }} data-aos="fade-left" >
+
+        <div className='plate'> 
+        <div className='plate overlay' > 
+        <div className='front'> 
+        <h4> Iterative Design </h4>
+        <p> Group project where we created an emerging startup's interface solely based 
+          on their mission.</p>
+        </div>
+        <div className='back'> 
+        <img src={roomCover2} className='anime-img'/>
+        </div>
+        </div>
+        </div>
+        </NavLink> 
+   
+        
+    <NavLink to={'../Redesign'} target="_blank" style={{ textDecoration: 'none' }} data-aos="fade-right">
+        <div className='plate'> 
+        <div className='plate overlay'> 
+        <div className='front'> 
+        <h4> Responsive Redesign </h4>
+        <p> Redesigned a poorly designed website using HTML/CSS.</p>
+        </div>
+        <div className='back'> 
+        <img src={redMock} className='anime-img'/>
+        </div>
+        </div>
+        </div>
+    </NavLink> 
+
+
+    <NavLink to={'../AnimeList'} target="_blank" style={{ textDecoration: 'none' }}data-aos="fade-left" >
+        <div className='plate'> 
+        <div className='plate overlay'> 
+        <div className='front'> 
+        <h4> My Anime List </h4>
+        <p> Used React to deploy a website that sorts, filters, and saves animes.</p>
+        </div>
+        <div className='back'> 
+        <img src={animePic2} className='anime-img'/>
+        </div>
+        </div>
+        </div>
+    </NavLink> 
+
+        </div>
+       
+      </section>
+
+      <section className="about">  
+        <div className='abt-title' data-aos="fade-up"> 
+        <p className='section-header'> About the Chef </p>
+        </div>
+       
+      <div className="abt-me" >
+        <div className='first-about' data-aos="fade-up"> 
+        <div className='lottie-box'> 
+        <Player className='lottie-chef'
+            autoplay
+            loop
+            src="https://assets3.lottiefiles.com/private_files/lf30_3dLrkA.json"
+            style={{ height: '300px', width: '300px' }}
+          >
+            <Controls visible={false}  />
+      </Player>
+        </div>
+      
+      <div className='little-about'> 
+      <h4>A little bit about me </h4> 
+      
+      <p>  I'm a student at Brown University studying CS-Econ and History. I've always enjoyed 
+        creating things, so I thought it would be fun to take UI/UX, a class that allowed me to 
+        focus on just that! 
+    
     I explored various aspects of the design process, from using Figma and experiencing 
     critiques to learning HTML/CSS and React. This website is a culmination of my work from 
-    this semester. I hope you enjoy exploring it as much as I had making it!
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    </Tilt>
+    this semester. </p>
+    </div> 
+      </div>
 
-    <Tilt className='tilt-card'
-    // glareEnable={true} 
-    // glareMaxOpacity={0.45}
-    scale={.9}
-    tiltMaxAngleX={10} 
-    tiltMaxAngleY={10} 
-    perspective={750} 
-    // glareColor="red"
-    // glarePosition="all"
-    >    
-    <Card  className="story-card">
-      <CardActionArea>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div" fontSize={30}>
-            Design inspiration
-          </Typography>
-          <Typography >
-         I used a number of different things to inspire my design this semester. I considered how
-         shapes on webpages flow together and how placement effects eye-movement. I also considered
-         how colors guide the flow of an interface and considered how to balance the interplay of fonts and 
-         colors to create readable and usable pieces.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    </Tilt>
-    </div>
+    
+      <div className='second-about' data-aos="fade-up">
+        
+        <div className='inspo-about'> 
+        <h4>Design inspiration </h4> 
+      
+          <p>  I've always loved creating things with food -- whether that be meals for 
+            friends and family or beautiful plates with contrasting colors and textures.
+            Coming into this class, I approached the creative process similarly to how
+            I cook at home. I started with a concept that I wanted to taste test 
+            and then built my designs from there, honing the product with the help 
+            of many taste testers from critiques and UX Factor! </p>
+    
+        </div> 
+          <div className='lottie-container'> 
+              <Player className='lottie-pot'
+                  autoplay
+                  loop
+                  src="https://assets5.lottiefiles.com/packages/lf20_v7kptb3h.json"
+                  style={{ height: '300px', width: '300px' }}
+                >
+                  <Controls visible={false}  />
+              </Player>
+          </div>
+      </div>
+      </div>
       </section>
     </div>
   );

@@ -3,22 +3,42 @@ import "./Storyboard.css";
 import kiosk from "../images/personas/kiosk.png";
 import tiredteal from "../images/personas/tired-teal.png";
 import busybob from "../images/personas/busy-bob.png";
+import personas from "../images/personas.png";
+import { Parallax, ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
+import ScrollToTop from "./ScrollToTop";
 
 
 const Storyboard = () => {
-    return  <div className="background">
-    <div className="background-1">
+    return <div className="screen-story"> 
+    <div className="background-storyboard">
             
-    <div className="iterative-space">
-   <h1 className="header"> Personas & Storyboarding: Interfacing with Brown's mailroom kiosk</h1>
-   <div>    In this project, I considered the kiosk interface outside of the mailroom. I centered the personas and 
+            <ScrollToTop/>
+        <div className="persona-intro">
+            <div className="persona-intro-words"> 
+            <h1 className="header" > Personas & Storyboarding </h1>
+            <h3> Interfacing with Brown's mailroom kiosk</h3>
+            </div>
+            <ParallaxProvider>
+            <Parallax
+                translateX={['-200px', '100px']}
+                scale={[0.75, 1]}
+                easing="easeInQuad"
+                >
+            <img src={personas} className="personas-header-img"/>
+            </Parallax>
+            </ParallaxProvider>
+            
+        </div> 
+        <div className="iterative-space">
+   <h2 className="h2">00. Context </h2>
+   
+   <div className="intro"> In this project, I considered the kiosk interface outside of the mailroom. I centered the personas and 
        storyboards around the kiosk -- how people interact with the kiosk day to day and what they're thinking and 
        feeling why they're using it. </div>
         
-        <hr/>
         <div class="section">
             <div class="subsection">
-                <h2>01. Choosing the Interface </h2>
+                <h2 className="h2">01. Choosing the Interface </h2>
                 <h3>Why the Kiosk?</h3>
                 <p> The requirement was to choose a public, easily accessible interface that people interact with on a daily basis.
                     Having retrieved many packages from the Mailroom throughout my years at Brown, I thought that the Brown 
@@ -78,7 +98,6 @@ const Storyboard = () => {
             </p>
             </div>
         </div>
-        <hr />
 
         <div class="section">
             <div class="subsection">    
@@ -106,10 +125,7 @@ const Storyboard = () => {
             </div>
         </div>
         
-      </div>
-
-      <hr />
-
+      
 
         <div class="section">
             <div class="subsection">
@@ -127,6 +143,8 @@ const Storyboard = () => {
 
             </div>
         </div>
+        </div>
+
     </div>
     </div>
 };

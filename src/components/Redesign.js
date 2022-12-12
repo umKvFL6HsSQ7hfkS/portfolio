@@ -9,10 +9,12 @@ import lofidesk from "../images/redesign/desktop-lofi-scroll.png";
 import lofitablet from "../images/redesign/tablet-lofi-scroll.png";
 import lofimobile from "../images/redesign/mobile-lofi-scroll.png";
 import vsg from "../images/redesign/vsg.png";
+import ScrollToTop from "./ScrollToTop";
 
 const Redesign = () => {
     return  <div className="background">
     <div className="background-1">
+        <ScrollToTop/>
             
     <div className="iterative-space">
    <h1> Responsive Redesign: Redesigning Frey & Florist Greenhouses </h1>
