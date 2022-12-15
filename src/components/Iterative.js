@@ -8,37 +8,94 @@ import RoomCarousel2 from "./RoomCarousel2";
 import IFrame from 'react-iframe';
 import RoomCarousel3 from "./RoomCarousel3";
 import ScrollToTop from "./ScrollToTop";
-import { Parallax, ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
 import roomPhone from "../images/roomkast-phones.png";
+import 'aos/dist/aos.css';
+import * as AOS from 'aos/dist/aos.js';
+import { useEffect } from 'react';
+import { Link } from "react-scroll";
+
 
 const Iterative = () => {
-    return  <div className="background-iterative">
-        <ScrollToTop/>
-            
-    <div className="iterative-space">
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+    
+    return  <div className="white-background">
+        
         <div className="iterative-intro-words"> 
+        <div className="iterative-intro-text"> 
    <h1 className="header-iterative"> Iterative Design </h1>
    <h3> Prototyping a Roommate-Matching App </h3>
-   <ParallaxProvider>
-            <Parallax
-                translateX={['-200px', '100px']}
-                scale={[0.75, 1]}
-                easing="easeInQuad"
-                >
-            <img src={roomPhone} className="roomkast-header-img"/>
-            </Parallax>
-            </ParallaxProvider>
    </div>
-   <h2 className="h2">00. Context </h2>
-   <div>     In this project, we were assigned to choose an emerging startup and design an ideal product interface.
-       This was a group project with 4 members total; the group evenly shared responsibilities of the design process.
-        We ideated and designed all of our interfaces from scratch. Additionally, a requirement of the assingment
-        was that we could not look at any of the startup’s existing designs, resulting in our unique interpretation
-        of how we thought the app should look like and function as.</div>
+            <img src={roomPhone} className="roomkast-header-img"/>
+   
+   </div>
+        <div className="background-iterative">
         
-        <div class="section">
-            <div class="subsection">
-                <h2>01. Research</h2>
+        <ScrollToTop/>
+    <div className="project-background"> 
+    <div className="descrip"> 
+    <h4> Role </h4>
+    <p className="list">UI/UX Designer</p>
+    <p className="list"> UI/UX Researcher</p>
+    </div>
+
+    <div className="descrip"> 
+    <h4> Team </h4>
+    <p className="list"> Can't reveal that yet!</p>
+    </div>
+
+    <div className="descrip"> 
+    <h4> Timeline </h4>
+    <p className="list"> Three weeks</p>
+    </div>
+
+    <div className="small-nav"> 
+        <h4> Jump to:</h4>
+        <p className="nav-link">
+        <Link activeClass="active" smooth spy to="context">
+                00. Context
+        </Link>
+        </p>
+        <p className="nav-link">
+        <Link activeClass="active" smooth spy to="research">
+                01. Research
+        </Link>
+        </p>
+        <p className="nav-link">  
+        <Link activeClass="active" smooth spy to="ideate">
+                02. Ideating the Design
+        </Link>
+        </p>
+        <p className="nav-link"> 
+        <Link activeClass="active" smooth spy to="prototype">
+                03. Prototyping the Roomkast App
+        </Link>
+        </p>
+        <p className="nav-link"> 
+        <Link activeClass="active" smooth spy to="usability">
+                04. Remote Usability Testing
+        </Link>
+        </p>
+        <p className="nav-link"> 
+        <Link activeClass="active" smooth spy to="reflection">
+                05. Reflection
+        </Link>
+        </p>
+    </div>
+    
+    </div>  
+    <section class="context">   
+        
+   <h1 >00. Context </h1>
+   <p>     In this project, we were assigned to choose an emerging startup and design an ideal product interface.
+       This was a group project with 4 members total; the group evenly shared responsibilities of the design process, ideating
+        and designing all of our interfaces from scratch.</p>
+        </section>
+        
+            <section class="research" >
+                <h1>01. Research</h1>
                 <h3>Selecting a Startup</h3>
                 <p>When thinking about which startup to select, we thought about the following criteria:</p>
                 <ul>
@@ -47,30 +104,32 @@ const Iterative = () => {
                 <li> The company had to have a clear purpose and view, so that there were clear goals we could develop solutions for in our interfaces. </li>
                 </ul>
 
-                <p>Keeping the above criteria in mind, we searched through startup accelerators such as <a href="https://www.ycombinator.com/" style={{ textDecoration: 'none'}}>YCombinator </a>and <a href="https://www.techstars.com/portfolio" style={{ textDecoration: 'none' }}>Techstars</a>. Ultimately we chose to develop an interface for a startup called Roomkast. As stated on their <a href="https://www.techstars.com/portfolio?name=Roomkast" style={{ textDecoration: 'none' }}>Techstars profile</a>, “Roomkast is a profile-matching tool for people who see the value in co-sharing a place to live”: </p>
+                <p>Keeping the above criteria in mind, we searched through startup accelerators, ultimately choosing to develop an interface for a startup called Roomkast. 
+                    As stated on their <a href="https://www.techstars.com/portfolio?name=Roomkast" style={{ textDecoration: 'none' }}>Techstars profile</a>, 
+                    a tool that matches individuals looking for shared housing: </p>
 
-                <div class="image-wrapper">
+                <div class="image-wrapper" >
                     <img src={roomkastDescr} className="room-desc"/>
                 </div>
-            </div>
-        </div>
+            </section>
+        
         <div class="subsection">
             <h3>Deciding the Interface’s Platform</h3>
             <p>We thought that the people who would most frequently use Roomkast were younger people who had just moved to a metropolitan area and were looking for a roommate to share an apartment or other living space with.</p>
 
-            <p>Given the popularity of dating apps amongst young people, we thought Roomkast users would feel the most familiar with a similar interface but centered around finding a roommate rather than a romantic partner.</p>
+            <p>Given the popularity of dating apps amongst young people, we thought Roomkast users would feel the most familiar with a similar interface that was centered around finding a roommate rather than a romantic partner.</p>
         </div>
-      </div>
-      <div class="section">
+
+      <section class="ideate">
         <div class="subsection">
-            <h2>02. Ideating the Design </h2>
+            <h1>02. Ideating the Design </h1>
             <p>For this project, we wanted to practice iterative prototyping. We began the design process by sketching out different possible layouts for our interface.</p>
             <p>Each member of our team created a set of sketches detailing what we imagined the website to look like. We did so without any input from one another so we could generate a diversity of approaches to solving Roomkast’s goals.</p>
         </div>
         
         <RoomCarousel/>
-    </div>
-    <h3>Combining our Designs into Wireframes</h3>
+    </section>
+    <h3>Honing our Final Idea</h3>
 
         <p>After reviewing our sketches, we discussed which designs most effectively solved Roomkast’s goals as a startup.</p>
         <ul>
@@ -79,12 +138,12 @@ const Iterative = () => {
             <li>We agreed that being able to create group profiles and message via the app were important features.</li>
         </ul>
 
-        <p>From our discussion, we combined our sketches to produce a final set of wireframes we would use to create our high-fidelity prototype.</p>
-        
-        <RoomCarousel2/>
-        <div class="section">
+        {/* <p>From our discussion, we combined our sketches to produce a final set of wireframes we would use to create our high-fidelity prototype.</p>
+         */}
+        {/* <RoomCarousel2/> */}
+        <section class="prototype">
             <div class="subsection">
-                <h2>03. Prototyping the Roomkast App</h2>
+                <h1>03. Prototyping the Roomkast App</h1>
                 <p>Next, we designed a high-fidelity interactive prototype in Figma to represent how the product would actually look and feel. We then iteratively improved on our interface by incorporating feedback from a design critique. Finally, we conducted remote usability testing to evaluate how well our interface worked.</p>
 
                 <h3>Drafting the Initial Prototype</h3>
@@ -104,9 +163,10 @@ const Iterative = () => {
                 <p>To help improve our prototype, we sought feedback from our peers and an industry professional via a design critique. Below, you can see how we incorporated feedback from the critique to revise our high-fidelity prototype.</p>
 
             </div>
-        </div>
+        </section>
         <RoomCarousel3/>
         <div class="subsection">
+            <div className="implementing-interaction"> 
         <h3>Implementing Interaction Principles</h3>
         <p>Both when creating the initial mockup and when revising the prototype, we carefully  considered the key principles of interaction, navigation, and hierarchy.</p>
 
@@ -115,31 +175,35 @@ const Iterative = () => {
             <li>High-contrast button design makes it very clear which elements are interactable</li>
             <li>Swiping on a conversation allows users pin a conversation, and blue pin icon shows feedback confirming conversation has been pinned</li>
             <li>Bookmark icon turns blue when the profile is saved, showing profile has been successfully bookmarked (Note: this feature's interaction has not been flushed out in the prototype; this is something we plan to implement in the future)</li>
-            <li>On each profile, the “Message Now” button in the middle of the screen where it is easily accessible</li>
-            <li>Messages screen contains a dropdown menu that gives users different options for sorting conversation </li>
+            {/* <li>On each profile, the “Message Now” button in the middle of the screen where it is easily accessible</li>
+            <li>Messages screen contains a dropdown menu that gives users different options for sorting conversation </li> */}
         </ul>
         <b>Navigation</b>
         <ul>
             <li>Left and right arrows, as well as “Next” buttons in the preferences survey allow users to easily review and change their responses</li>
-            <li>Besides the onboarding process, the navigation bar is always visible, so users can easily switch between different sections of the app. </li>
+            {/* <li>Besides the onboarding process, the navigation bar is always visible, so users can easily switch between different sections of the app. </li> */}
             <li>A navigation bar that utilizes not only common icons and text labels to make it clear what each option will lead to. The currently selected navbar option is blue, so users always understand where they are.</li>
             <li>Screens embedded deeper in the hierarchy, such as viewing a specific profile or conversation, have consistently styled “Back” buttons.</li>
         </ul>
         <b>Hierarchy</b>
           <ul>
-            <li>Blue banners at the top of screens contain the name of current screen in large, bold tex</li>
+            <li>Blue banners at the top of screens contain the name of current screen in large, bold text</li>
             <li>In the profile view, dividing lines and section headers logically separate profile information</li>
             <li>Layout of elements creates a natural top-to-down reading flow, generally from more to less important information.</li>
-            <li>Screens embedded deeper in the hierarchy, such as viewing a specific profile or conversation, have consistently styled “Back” buttons.</li>
+            {/* <li>Screens embedded deeper in the hierarchy, such as viewing a specific profile or conversation, have consistently styled “Back” buttons.</li> */}
           </ul>
-        <p>Here’s our final design file and revised prototype. Please try it out!</p>
+          </div>
+        <b className="final-link">Here’s our final design file and revised prototype. Please try it out!</b>
+        <div className="iframe-padding-top"> 
         <IFrame 
             styles={{border: "1px solid rgba(0, 0, 0, 0.1)"}}
             width="100%"
             height="650" 
+            
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvinTFwwNoHv1nI5GIxQFoK%2FInitial-Roomkast-Mockup%3Fnode-id%3D0%253A1" 
             allowfullscreen
         ></IFrame>
+        </div> 
         <IFrame 
             styles={{border: "1px solid rgba(0, 0, 0, 0.1)"}}
             width="100%" 
@@ -148,9 +212,9 @@ const Iterative = () => {
             allowfullscreen>
         </IFrame>
       </div>
-      <div class="section">
+      <section class="usability">
         <div class="subsection">
-            <h2>04. Remote Usability Testing</h2>
+            <h1>04. Remote Usability Testing</h1>
             <p>To evaluate our interface, we conducted usability testing. User testing is when you have someone use the interface/product that you have created and give feedback and suggestions about your design. To accomplish this remotely, we used the platform <a href="usertesting.com">UserTesting.com</a>. We configured the test so that users would interact with the prototype on their phone. 
             </p>
         </div>
@@ -183,7 +247,7 @@ const Iterative = () => {
             </p>
         </div>
         </div>
-        </div>
+        </section>
         <div>
         <p>We also came up with post-test questions that users would respond to after interacting with the prototype to gain further insight into our interface.</p>
 
@@ -228,9 +292,9 @@ const Iterative = () => {
         <p>Generally, users enjoyed the cleanliness of the design coupled with the fonts and colors chosen. They found the design to be simple and undistracting, and they understood the compatibility system without need for further explanation. Additionally, all three users believed that they were able to complete the task successfully and rated the easiness of the task as a ⅘.</p>
         </div>
         </div>
-        <div class="section">
+        <section class="reflection">
             <div class="subsection">
-                <h2>05. Reflection</h2>
+                <h1>05. Reflection</h1>
             <ol>
                 <li>We were able to turn our wireframes into an intuitive and functional prototype</li>
                 <li>We learned a lot from the studio critique and user tests, and the importance of the iterative design process.</li>
@@ -240,7 +304,8 @@ const Iterative = () => {
             </ol>
 
             </div>
-        </div>
+        </section>
+    </div>
     </div>
 
 };

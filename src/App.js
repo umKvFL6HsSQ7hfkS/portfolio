@@ -10,6 +10,7 @@ import redMock from "../src/images/redesign-mockup.png";
 import animePic2 from "./images/animecard2.png";
 import roomCover2 from "./images/roomkastCover2.png";
 import personas from "./images/personas.png";
+import personas2 from "./images/personas2.png";
 import dumpling from "./images/dumpling.png"
 import noodles from "./images/noodles.png";
 import 'aos/dist/aos.css';
@@ -28,7 +29,7 @@ function App() {
 
       useEffect(() => {
         const typed = new Typed(el.current, {
-          strings: ["Hi! Welcome to my CS1300 portfolio!"], // Strings to display
+          strings: ["Hi! Welcome to my portfolio!"], // Strings to display
           // Speed settings, try diffrent values untill you get good results
   
           startDelay: 0,
@@ -75,18 +76,17 @@ function App() {
       <section className="home">
         
       <p className="words" ref={el}></p>
-      <div className='drag-notice'> 
-      (Click to drag the food around!)</div>
+  
 
-      {/* <Player className='ramen'
+      <Player className='ramen'
             autoplay
             loop
             src="https://lottie.host/716605c7-af03-40f1-adcb-6bd563a98cff/ZVBbxzgrH1.json"
             style={{ height: '300px', width: '300px' }}
           >
             <Controls visible={false}  />
-          </Player> */}
-          <div className='food-drag'> 
+          </Player>
+          {/* <div className='food-drag'> 
       <Draggable > 
       <Resizable
         defaultSize={{
@@ -117,7 +117,7 @@ function App() {
       >
       </Resizable>
       </Draggable>
-      </div>
+      </div> */}
       </section>
 
       
@@ -137,14 +137,14 @@ function App() {
           
       <div className='cards' > 
         <NavLink to={'../Storyboard'} target="_blank" style={{ textDecoration: 'none' }} data-aos="fade-right">
- 
-        <div className='plate'> 
-        <div className='plate overlay'> 
-        <div className='front'> 
+          
+        <div className='plate2'> 
+        <div className='overlay2'> 
+        <div className='front2'> 
         <h4> Storyboard & Personas</h4>
         <p> Considering the effectiveness of the Brown Mailroom Kiosk.</p>
         </div>
-        <div className='back'> 
+        <div className='back2'> 
         <img src={personas} className='anime-img'/>
         </div>
         </div>
@@ -153,14 +153,14 @@ function App() {
         
     <NavLink to={'../Iterative'} target="_blank" style={{ textDecoration: 'none' }} data-aos="fade-left" >
 
-        <div className='plate'> 
-        <div className='plate overlay' > 
-        <div className='front'> 
+        <div className='plate1'> 
+        <div className='overlay1' > 
+        <div className='front1'> 
         <h4> Iterative Design </h4>
         <p> Group project where we created an emerging startup's interface solely based 
           on their mission.</p>
         </div>
-        <div className='back'> 
+        <div className='back1'> 
         <img src={roomCover2} className='anime-img'/>
         </div>
         </div>
@@ -169,13 +169,13 @@ function App() {
    
         
     <NavLink to={'../Redesign'} target="_blank" style={{ textDecoration: 'none' }} data-aos="fade-right">
-        <div className='plate'> 
-        <div className='plate overlay'> 
-        <div className='front'> 
+        <div className='plate3'> 
+        <div className='overlay3'> 
+        <div className='front3'> 
         <h4> Responsive Redesign </h4>
         <p> Redesigned a poorly designed website using HTML/CSS.</p>
         </div>
-        <div className='back'> 
+        <div className='back3'> 
         <img src={redMock} className='anime-img'/>
         </div>
         </div>
@@ -184,13 +184,13 @@ function App() {
 
 
     <NavLink to={'../AnimeList'} target="_blank" style={{ textDecoration: 'none' }}data-aos="fade-left" >
-        <div className='plate'> 
-        <div className='plate overlay'> 
-        <div className='front'> 
+        <div className='plate4'> 
+        <div className='overlay4'> 
+        <div className='front4'> 
         <h4> My Anime List </h4>
         <p> Used React to deploy a website that sorts, filters, and saves animes.</p>
         </div>
-        <div className='back'> 
+        <div className='back4'> 
         <img src={animePic2} className='anime-img'/>
         </div>
         </div>

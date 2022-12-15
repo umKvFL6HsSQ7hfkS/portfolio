@@ -3,43 +3,91 @@ import "./Storyboard.css";
 import kiosk from "../images/personas/kiosk.png";
 import tiredteal from "../images/personas/tired-teal.png";
 import busybob from "../images/personas/busy-bob.png";
-import personas from "../images/personas.png";
+import personas from "../images/persona-heads.png";
 import { Parallax, ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
 import ScrollToTop from "./ScrollToTop";
+import { Link } from "react-scroll";
 
 
 const Storyboard = () => {
-    return <div className="screen-story"> 
-    <div className="background-storyboard">
+    return <div className="white-background"> 
             
-            <ScrollToTop/>
+            
         <div className="persona-intro">
             <div className="persona-intro-words"> 
-            <h1 className="header" > Personas & Storyboarding </h1>
+            <div className="persona-intro-text"> 
+            <h1 className="header-persona" > Personas & Storyboarding </h1>
             <h3> Interfacing with Brown's mailroom kiosk</h3>
             </div>
-            <ParallaxProvider>
-            <Parallax
-                translateX={['-200px', '100px']}
-                scale={[0.75, 1]}
-                easing="easeInQuad"
-                >
             <img src={personas} className="personas-header-img"/>
-            </Parallax>
-            </ParallaxProvider>
-            
+            </div>
         </div> 
-        <div className="iterative-space">
+        <div className="background-persona">
+        <ScrollToTop/>
+
+        <div className="project-background"> 
+    <div className="descrip"> 
+    <h4> Role </h4>
+    <p className="list"> UI/UX Researcher</p>
+    </div>
+
+    <div className="descrip"> 
+    <h4> Team </h4>
+    <p className="list"> Can't reveal that yet!</p>
+    </div>
+
+    <div className="descrip"> 
+    <h4> Timeline </h4>
+    <p className="list"> Three weeks</p>
+    </div>
+
+    <div className="small-nav"> 
+        <h4> Jump to:</h4>
+        <p className="nav-link">
+        <Link activeClass="active" smooth spy to="context">
+                00. Context
+        </Link>
+        </p>
+        <p className="nav-link">
+        <Link activeClass="active" smooth spy to="interface">
+                01. Choosing the Interface
+        </Link>
+        </p>
+        <p className="nav-link">  
+        <Link activeClass="active" smooth spy to="research">
+                02. Researching the Users
+        </Link>
+        </p>
+        <p className="nav-link"> 
+        <Link activeClass="active" smooth spy to="creating">
+                03. Creating Personas
+        </Link>
+        </p>
+        <p className="nav-link"> 
+        <Link activeClass="active" smooth spy to="storyboard">
+                04. Storyboard
+        </Link>
+        </p>
+        <p className="nav-link"> 
+        <Link activeClass="active" smooth spy to="reflection">
+                05. Reflection
+        </Link>
+        </p>
+    </div>
+    
+    </div> 
+
+    <section className="context">
    <h2 className="h2">00. Context </h2>
    
-   <div className="intro"> In this project, I considered the kiosk interface outside of the mailroom. I centered the personas and 
+   <p className="intro"> In this project, I considered the kiosk interface outside of the mailroom. I centered the personas and 
        storyboards around the kiosk -- how people interact with the kiosk day to day and what they're thinking and 
-       feeling why they're using it. </div>
-        
-        <div class="section">
+       feeling why they're using it. </p>
+    </section>     
+        <section class="interface">
             <div class="subsection">
                 <h2 className="h2">01. Choosing the Interface </h2>
-                <h3>Why the Kiosk?</h3>
+                <h5>Why the Kiosk?</h5>
                 <p> The requirement was to choose a public, easily accessible interface that people interact with on a daily basis.
                     Having retrieved many packages from the Mailroom throughout my years at Brown, I thought that the Brown 
                     Mailroom Kiosk would be an interesting interface to observe.
@@ -54,8 +102,8 @@ const Storyboard = () => {
                 
 
             </div>
-        </div>
-        <div class="section">
+        </section>
+        <section class="research">
             <div class="subsection">
                 <h2>02. Researching Users</h2>
                 <h3>Observations</h3>
@@ -97,9 +145,9 @@ const Storyboard = () => {
 
             </p>
             </div>
-        </div>
+        </section>
 
-        <div class="section">
+        <section class="creating">
             <div class="subsection">    
             <h2>03. Creating Personas</h2>
             <p> Following these observations and interviews, I created two personas: Tired Teal and Busy Bob. These personas were 
@@ -123,29 +171,30 @@ const Storyboard = () => {
                 <img src={busybob} className="persona"/> 
             </div>
             </div>
-        </div>
+        </section>
         
       
 
-        <div class="section">
+        <section class="storyboard">
             <div class="subsection">
                 <h2>04. Storyboard</h2>
-                <p> ...
+                <p> To further develop my understanding of those who use the mailroom kiosk, I created a storyboard
+                    for Tired Teal. This storyboard walks through her experience using the kiosk and alos takes into 
+                    account her feelings / emotions and challenges she faces.
                      </p>
 
             </div>
-        </div>
-        <div class="section">
+        </section>
+        <section class="reflection">
             <div class="subsection">
                 <h2>05. Reflection</h2>
                 <p> ...
                      </p>
 
             </div>
-        </div>
+        </section>
         </div>
 
-    </div>
     </div>
 };
 
