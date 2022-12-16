@@ -20,7 +20,7 @@ root.render(
   <HashRouter>
   <Routes>
     <Route path="/" element={<App />} />
-    <Route path="/App" element={<App />} />
+    <Route exact path="/App" element={<App />} />
     <Route path="storyboard" element={<Storyboard />} />
     <Route path="iterative" element={<Iterative />} />
     <Route path="animelist" element={<AnimeList />} />
