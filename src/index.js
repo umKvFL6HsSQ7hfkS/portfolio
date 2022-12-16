@@ -8,6 +8,7 @@ import Iterative from "./components/Iterative";
 import Redesign from './components/Redesign';
 import AnimeList from './components/AnimeList';
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import { HashRouter } from 'react-router-dom';
 
 
 
@@ -16,14 +17,15 @@ root.render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>
-  <BrowserRouter>
+  <HashRouter>
   <Routes>
     <Route path="/" element={<App />} />
+    <Route path="/App" element={<App />} />
     <Route path="storyboard" element={<Storyboard />} />
     <Route path="iterative" element={<Iterative />} />
     <Route path="animelist" element={<AnimeList />} />
     <Route path="redesign" element={<Redesign />} />
   </Routes>
-</BrowserRouter>,
+  </HashRouter>,
 document.getElementById("root")
 );
