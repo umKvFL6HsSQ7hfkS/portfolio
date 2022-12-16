@@ -4,27 +4,89 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import { Link } from "react-scroll";
 import RedesignCarousel from "./RedesignCarousel";
 import lofidesk from "../images/redesign/desktop-lofi-scroll.png";
 import lofitablet from "../images/redesign/tablet-lofi-scroll.png";
 import lofimobile from "../images/redesign/mobile-lofi-scroll.png";
 import vsg from "../images/redesign/vsg.png";
 import ScrollToTop from "./ScrollToTop";
+import headerImg from "../images/redesign/header-image.png";
+import Accordion from 'react-bootstrap/Accordion';
+import Iframe from "react-iframe";
+import { NavLink } from "react-router-dom";
 
 const Redesign = () => {
-    return  <div className="background">
-    <div className="background-1">
-        <ScrollToTop/>
-            
-    <div className="iterative-space">
-   <h1> Responsive Redesign: Redesigning Frey & Florist Greenhouses </h1>
-   <div>     In this project, I chose a poorly designed website -- determined by a general usability and navigational
-       qualities -- and recreated a new and improved version.</div>
+    return  <div className="white-background">
+
+    <div className="redesign-intro-words"> 
+    <div className="redesign-intro-text"> 
+   <h1 className="heaeder-redesign"> Responsive Redesign </h1>
+   <h3>  Redesigning Frey & Florist Greenhouses</h3>
+   </div>
+        <img src={headerImg} className="redesign-header-img"/>
+   </div>
+
+
+   <div className="background-redesign">
+   <ScrollToTop/>
+
+   <div className="project-background"> 
+    <div className="descrip"> 
+    <h4> Role </h4>
+    <p className="list">UI/UX Designer</p>
+    <p className="list"> UI/UX Researcher</p>
+    <p className="list"> Developer</p>
+    </div>
+
+    <div className="descrip"> 
+    <h4> Team </h4>
+    <p className="list"> Just me!</p>
+    </div>
+
+    <div className="descrip"> 
+    <h4> Timeline </h4>
+    <p className="list"> Two weeks</p>
+    </div>
+
+    <div className="small-nav"> 
+        <h4> Jump to:</h4>
+        <p className="nav-link">
+        <Link activeClass="active" smooth spy to="context">
+                00. Context
+        </Link>
+        </p>
+        <p className="nav-link">
+        <Link activeClass="active" smooth spy to="research">
+                01. Research
+        </Link>
+        </p>
+        <p className="nav-link">  
+        <Link activeClass="active" smooth spy to="ideate">
+                02. Ideating the Design
+        </Link>
+        </p>
+        <p className="nav-link"> 
+        <Link activeClass="active" smooth spy to="reflection">
+                03. Reflection
+        </Link>
+        </p>
+        <a className="nav-link-href" href='https://umkvfl6hssq7hfks.github.io/responsive-redesign-website/' target="_blank" style={{color: 'black'}}> 
+                04. The Final Product
+        </a>
+    </div>
+    
+    </div> 
+
+   <section className="context"> 
+   <h1> 00. Context </h1> 
+   <p>     In this project, I chose a poorly designed website -- determined by a general usability and navigational
+       qualities -- and recreated a new and improved version.</p>
+    </section>   
         
-        <hr/>
-        <div class="section">
+        <section class="research">
             <div class="subsection">
-                <h2>01. Research</h2>
+                <h1>01. Research</h1>
                 <h3>Selecting a Website</h3>
                 <p>At the beginning of this process, I searched for a website that I thought was not very responsive and also was generally hard to navigate. I ended up 
                     finding the website of <a href="original/product-original.jpeg" className="link"> Frey & Florist Greenhouses,</a> a Providence-based flower 
@@ -43,8 +105,8 @@ const Redesign = () => {
                 <RedesignCarousel/>
 
             </div>
-        </div>
-        <div class="subsection">
+        </section>
+        <div class="accessibility">
             <h3>Accessibility Issues</h3>
             <p> As with any website, it is important to take accessibility into account -- these includes things such as 
                 color contrast, screenreader accessibility, and much more. As detected using WebAIM WAVE, there are over 20 contrast errors on this homepage alone. 
@@ -55,60 +117,67 @@ const Redesign = () => {
                     they're describing. For example, the alt tag for the "Custom Arrangements" only says "Custom Flower Design"
                     with no mention that this is a product offering. </p>
 
-
         </div>
         
-      </div>
 
-      <hr />
-      <div class="section">
+
+      
+      <section class="ideate">
         <div class="subsection">
-            <h2>02. Ideating the Design </h2>
+
+
+               
+
+            <h1>02. Ideating the Design </h1>
             <p>Before I developed my hifi designs or the actual redesigned website,
                 the first thing I did was create lofi designs designed using Balsamiq. </p>
            <h4> Lofi Wireframes</h4> 
-           <p>The three images you see below are the simple structres that I based my hifi designs and actual webpage on. </p>
+           <p>The three scrollable images in the dropdowns below are the simple structres that I based my hifi designs and actual webpage on. </p>
         </div>
-        <div className="lofi-space"> 
-        <Card className="story-card-responsive" style={{maxHeight: 400, overflow: 'auto', maxWidth: 900}}>
+        <div className="accordion-space"> 
+        <Accordion>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Desktop Lofi Design</Accordion.Header>
+        <Accordion.Body>
+            <Card className="story-card-responsive" style={{maxHeight: 500, overflow: 'auto', maxWidth: 1200}}>
 
             <CardContent className="head">
-                <Typography gutterBottom variant="h5" component="div" fontSize={30} className="header">
-          <br/>
-            Desktop Lofi Design
-                </Typography>
                 <CardMedia
-                
                 component="img"
                 src={lofidesk} 
                 />
             </CardContent>
-        </Card>
-        <Card className="story-card-responsive" style={{maxHeight: 400, overflow: 'auto', width: 900}}>
-
-            <CardContent className="head">
-                <Typography gutterBottom variant="h5" component="div" fontSize={30} className="header">
-                <br/>
-                Tablet Lofi Design
-                </Typography>
-                <CardMedia
-                component="img"
-                src={lofitablet} 
-                />
-            </CardContent>
-        </Card>
-        <Card className="story-card-responsive" style={{maxHeight: 400, overflow: 'auto', width: 900}}>
-            <CardContent className="head">
-                <Typography gutterBottom variant="h5" component="div" fontSize={30} className="header">
-                <br/>
-                Mobile Lofi Design
-                </Typography>
-                <CardMedia
-                component="img"
-                src={lofimobile} 
-                />
-            </CardContent>
-        </Card>
+            </Card>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Tablet Lofi Design</Accordion.Header>
+        <Accordion.Body>
+            <Card className="story-card-responsive" style={{maxHeight: 500, overflow: 'auto', width: 1200}}>
+                <CardContent className="head">
+                    <CardMedia
+                    component="img"
+                    src={lofitablet} 
+                    />
+                </CardContent>
+            </Card>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2">
+        <Accordion.Header>Mobile Lofi Design</Accordion.Header>
+        <Accordion.Body>
+            <Card className="story-card-responsive" style={{maxHeight: 500, overflow: 'auto', width: 1200}}>
+                <CardContent className="head">
+                    <CardMedia
+                    component="img"
+                    src={lofimobile} 
+                    />
+                </CardContent>
+            </Card>
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+        
     </div>
     <h4> Visual Stype Guide</h4> 
        
@@ -119,25 +188,33 @@ const Redesign = () => {
         <div className="vsg-container"> 
                <img src={vsg} className="vsg" />
         </div>
-    </div>
+    </section>
 
     <h3>Hifi Designs</h3>
 
         <p>The final iteration of the design process consisted of creating hifi wireframes; I ued Figma complete this task since
-            I thought it would give me a clean, hollistic view of what I was going to create in HTML. Additionally, I considered 
+            I thought it would give me a clean, hollistic view of what I was going to create in HTML / CSS. Additionally, I considered 
             what the code structure would look like -- ie. Where would I use flexboxes? When would I use a header as opposed to 
-            normal text to indicate webpage hierarchy? These more technical decisions are annotated on the hifi wireframes seen below. </p>
+            plain text to indicate webpage hierarchy? Feel free to explore the hifi wireframes below! The technical decisions are annotated on the hifi wireframes as well. </p>
+
+            <Iframe 
+            styles={{border: "1px solid rgba(0, 0, 0, 0.1)"}}
+            width="100%" 
+            height="550" 
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FNFqrq7xMiReC9NZUy6hCkd%2FUntitled%3Fnode-id%3D0%253A1%26t%3DEt1y2mchli1TTHAJ-1"
+            allowfullscreen>
+            </Iframe>
     
     <div className="block">
     <a className="finished" href="https://umkvfl6hssq7hfks.github.io/responsive-redesign-website/">The finished product</a>
+    <p> Click the above link to navigate to the final responsive website. The deployed website is responsive using a wide variety of screen sizes, from a Macbook Pro to an iPhone.</p>
     </div>
         
-        
-      <hr />
 
-        <div class="section">
+
+        <section class="reflection">
             <div class="subsection">
-                <h2>03. Reflection</h2>
+                <h1>03. Reflection</h1>
                 <p> This project was a great introduction to a full ideation process; the many iterations of my designs allowed me to hone my
                     design and see the process through from start to finish.
                     I did ulimately have some issues trying to implement the hamburger menu for the smaller screen sizes; this is 
@@ -145,7 +222,7 @@ const Redesign = () => {
                      </p>
 
             </div>
-        </div>
+        </section>
     </div>
     </div>
 

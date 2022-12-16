@@ -1,25 +1,84 @@
 import React from "react";
 import "./AnimeList.css";
+import Link from "react-scroll/modules/components/Link";
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import './RoomCarousel.css';
-
+import ScrollToTop from "./ScrollToTop";
+import animeHeader from "../images/anime-header.png";
 
 
 const AnimeList = () => {
-    return  <div className="background">
-    <div className="background-1">
-            
-    <div className="anime-space">
-   <h1> Development: My Anime List </h1>
-   <div>     We were tasked with developing an interactive interface by combining interactive components
+    return  <div className="white-background">
+
+        <div className="anime-intro-words">
+            <div className="anime-intro-text"> 
+        <h1 className="header-anime"> Development </h1>
+        <h3> Creating an Anime Aggregator </h3>
+        </div>
+        <img src={animeHeader} className="anime-header-img"/>
+        </div>
+
+    <div className="background-anime">
+         <ScrollToTop/>
+
+         <div className="project-background"> 
+        <div className="descrip"> 
+        <h4> Role </h4>
+        <p className="list">UI/UX Designer</p>
+        <p className="list"> Developer</p>
+        </div>
+
+        <div className="descrip"> 
+        <h4> Team </h4>
+        <p className="list"> Just me!</p>
+        </div>
+
+        <div className="descrip"> 
+        <h4> Timeline </h4>
+        <p className="list"> Two weeks</p>
+        </div>
+
+    <div className="small-nav"> 
+        <h4> Jump to:</h4>
+        <p className="nav-link">
+        <Link activeClass="active" smooth spy to="context">
+                00. Context
+        </Link>
+        </p>
+        <p className="nav-link">
+        <Link activeClass="active" smooth spy to="research">
+                01. Research
+        </Link>
+        </p>
+        <p className="nav-link">  
+        <Link activeClass="active" smooth spy to="ideate">
+                02. Ideating the Design
+        </Link>
+        </p>
+        <p className="nav-link"> 
+        <Link activeClass="active" smooth spy to="reflection">
+                03. Reflection
+        </Link>
+        </p>
+        <a className="nav-link-href" href='https://umkvfl6hssq7hfks.github.io/my-anime-list/' 
+        target="_blank" style={{color: 'black'}}> 
+                04. The Final Product
+        </a>
+    </div>
+    
+    </div>
+
+    <section class="context"> 
+    <h1 >00. Context </h1>
+   <p>     In this project, I developed an interactive interface by combining interactive components
        and an internal data state. This was our first assignment in React, and much of my process was focused
-       on learning how to use components to create an intuitive application for my users.</div>
-        
-        <hr/>
-        <div class="section">
+       on learning how to use components and States to create an intuitive application for my users.</p>
+       </section>
+
+        <section class="research">
             <div class="subsection">
-                <h2>01. Research</h2>
+                <h1>01. Research</h1>
                 <h3>Selecting the Topic and Considering Requirements</h3>
                 <p>When determining what interface I wanted to create, I decided that it would be most enjoyable to 
                     create something that I felt I would personally use. Since I really enjoy anime, I decided to make
@@ -44,13 +103,13 @@ const AnimeList = () => {
                 </ul>
                 
             </div>
-        </div>
+        </section>
 
-      </div>
-      <hr />
-      <div class="section">
+
+
+      <section class="ideate">
         <div class="subsection">
-            <h2>02. Ideating the Design </h2>
+            <h1>02. Ideating the Design </h1>
             <div class="subsection">
             <h3>Deciding the Code Structure</h3>
             <p> Taking into account the requirements above, I decided to use three components: Aggregator.js, ShowItem.js, and App.js. 
@@ -60,7 +119,7 @@ const AnimeList = () => {
         </div>
         </div>
     
-    </div>
+    </section>
     <h3>Usability</h3>
 
         <p>Card usability</p>
@@ -119,19 +178,18 @@ const AnimeList = () => {
             </p>
             
         </div>
-        <hr/>
         
-        <div class="section">
+        <section class="reflection">
             <div class="subsection">
-                <h2>03. Reflection</h2>
-                <p> This project was a great chance to learn React hands-on as I grappled with how components and props work
-                    and experimented with Boostrap. These skills were extremely valuable to gain, especially since I used them
-                    to build this very portfolio. This project served as great inspiration for me in terms of expiermenting with
-                    UI elemnts as well -- I plan to experiment with different styles of buttons like radio buttons in upcoming projects.
+                <h1>03. Reflection</h1>
+                <p> This project was a great chance to learn React hands-on as I grappled with how components and props work; additionally,
+                    I experimented with Boostrap to also focus on the aesthetic aspect of my design. These skills were extremely valuable to gain, especially since I used them
+                    to build this very portfolio! This project served as great inspiration for me in terms of experimenting with
+                    UI elemnts as well -- I plan to challenge myself by using different styles of buttons like radio buttons in upcoming projects.
                 </p>
 
             </div>
-        </div>
+        </section>
         </div>
     </div>
 };

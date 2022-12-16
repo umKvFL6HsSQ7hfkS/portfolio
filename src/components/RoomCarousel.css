@@ -24,8 +24,9 @@ margin: 3%;
     height: 500px;
     width: 500px;
     /* margin: 0 auto 3%; */
-    margin-left: 33%;
-    margin-right: 33%;
+    /* margin-left: 33%;
+    margin-right: 33%; */
+    margin-left: 10%;
     text-align: center;
     align-self: center;
     align-content: center;
@@ -86,7 +87,6 @@ margin: 3%;
 .img1{
     width: 800px;
     height: 650px;
-    margin-left: 27%;
-    margin-right: 33%;
+    margin-left: 17%;
     margin-top: -20px;
 }

@@ -4,7 +4,7 @@ import roomkastDescr from '../images/roomcast_description.png';
 import RoomCarousel from "./RoomCarousel";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './RoomCarousel.css';
-import RoomCarousel2 from "./RoomCarousel2";
+// import RoomCarousel2 from "./RoomCarousel2";
 import IFrame from 'react-iframe';
 import RoomCarousel3 from "./RoomCarousel3";
 import ScrollToTop from "./ScrollToTop";
@@ -295,13 +295,17 @@ const Iterative = () => {
         <section class="reflection">
             <div class="subsection">
                 <h1>05. Reflection</h1>
-            <ol>
+                <p> I really enjoyed this project because I had the opportunity to develop so many skills, such as being a UI/UX researcher and designer. 
+                    Ultimately, it was great seeing a successful, intuitive prototype built off of our wireframes.In future iterations, we will adjust the scrolling issue to make each page more responsive to varying screen 
+                    sizes. Additionally, we will flush on other interactions such as archiving and deleting messages.
+                </p>
+            {/* <ol>
                 <li>We were able to turn our wireframes into an intuitive and functional prototype</li>
                 <li>We learned a lot from the studio critique and user tests, and the importance of the iterative design process.</li>
                 <li>In future iterations, we will adjust the scrolling issue to make each page more responsive to varying screen 
                     sizes. Additionally, we will flush on other interactions such as archiving and deleting messages.
                 </li>
-            </ol>
+            </ol> */}
 
             </div>
         </section>

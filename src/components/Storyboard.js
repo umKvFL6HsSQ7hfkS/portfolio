@@ -7,6 +7,7 @@ import personas from "../images/persona-heads.png";
 import { Parallax, ParallaxBanner, ParallaxProvider } from 'react-scroll-parallax';
 import ScrollToTop from "./ScrollToTop";
 import { Link } from "react-scroll";
+import PersonaCarousel from "./PersonaCarousel";
 
 
 const Storyboard = () => {
@@ -33,12 +34,12 @@ const Storyboard = () => {
 
     <div className="descrip"> 
     <h4> Team </h4>
-    <p className="list"> Can't reveal that yet!</p>
+    <p className="list"> Just me!</p>
     </div>
 
     <div className="descrip"> 
     <h4> Timeline </h4>
-    <p className="list"> Three weeks</p>
+    <p className="list"> One week</p>
     </div>
 
     <div className="small-nav"> 
@@ -78,7 +79,7 @@ const Storyboard = () => {
     </div> 
 
     <section className="context">
-   <h2 className="h2">00. Context </h2>
+   <h1 >00. Context </h1>
    
    <p className="intro"> In this project, I considered the kiosk interface outside of the mailroom. I centered the personas and 
        storyboards around the kiosk -- how people interact with the kiosk day to day and what they're thinking and 
@@ -86,7 +87,7 @@ const Storyboard = () => {
     </section>     
         <section class="interface">
             <div class="subsection">
-                <h2 className="h2">01. Choosing the Interface </h2>
+                <h1 >01. Choosing the Interface </h1>
                 <h5>Why the Kiosk?</h5>
                 <p> The requirement was to choose a public, easily accessible interface that people interact with on a daily basis.
                     Having retrieved many packages from the Mailroom throughout my years at Brown, I thought that the Brown 
@@ -105,7 +106,7 @@ const Storyboard = () => {
         </section>
         <section class="research">
             <div class="subsection">
-                <h2>02. Researching Users</h2>
+                <h1>02. Researching Users</h1>
                 <h3>Observations</h3>
                 <p>To create the personas and their corresponding storyboards, I observed and interviewed users of the Brown Mailroom kiosk. 
                     I ensured that I had the users' consent before I conducted this analysis.
@@ -149,7 +150,7 @@ const Storyboard = () => {
 
         <section class="creating">
             <div class="subsection">    
-            <h2>03. Creating Personas</h2>
+            <h1>03. Creating Personas</h1>
             <p> Following these observations and interviews, I created two personas: Tired Teal and Busy Bob. These personas were 
                 inspired by the kiosk users I observed and the information I gathered during the interview process.  </p>
             <h3>Tired Teal</h3>
@@ -177,18 +178,20 @@ const Storyboard = () => {
 
         <section class="storyboard">
             <div class="subsection">
-                <h2>04. Storyboard</h2>
+                <h1>04. Storyboard</h1>
                 <p> To further develop my understanding of those who use the mailroom kiosk, I created a storyboard
                     for Tired Teal. This storyboard walks through her experience using the kiosk and alos takes into 
                     account her feelings / emotions and challenges she faces.
                      </p>
-
+                     <PersonaCarousel/>
             </div>
         </section>
         <section class="reflection">
             <div class="subsection">
-                <h2>05. Reflection</h2>
-                <p> ...
+                <h1>05. Reflection</h1>
+                <p> This project was a great intro to the UX researcher process. I learned how to interview individuals using a digital interface and 
+                    considered both visible interactions (such as swiping a Brown ID through the kiosk) and invisiable interactions (such as how people's 
+                    expectations when using the kiosk inform their feelings about it). 
                      </p>
 
             </div>
