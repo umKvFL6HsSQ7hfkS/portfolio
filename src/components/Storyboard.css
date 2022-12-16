@@ -16,12 +16,17 @@
 
 .intro{
     margin-top: 20px;
+    font-size: 20px;
 }
 
 .persona-intro{
     display: flex;
     justify-content: space-between;
     
+}
+
+.p{
+    font-size: 20px;
 }
 
 .background-persona{
@@ -88,7 +93,7 @@
 
 p, b, li{
     line-height: 150%;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 0;
     margin-block-start: 0.5em;
     margin-block-end: 0;
@@ -137,6 +142,10 @@ h3, h4{
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
+}
+
+.list{
+    font-size: 20px;
 }
 
 .vsg-container{

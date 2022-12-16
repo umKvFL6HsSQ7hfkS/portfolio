@@ -88,13 +88,13 @@ const Storyboard = () => {
             <div class="subsection">
                 <h1 >01. Choosing the Interface </h1>
                 <h5>Why the Kiosk?</h5>
-                <p> The requirement was to choose a public, easily accessible interface that people interact with on a daily basis.
+                <p className="p"> The requirement was to choose a public, easily accessible interface that people interact with on a daily basis.
                     Having retrieved many packages from the Mailroom throughout my years at Brown, I thought that the Brown 
                     Mailroom Kiosk would be an interesting interface to observe.
                 </p>
                 <h3>Interface Breakdown</h3>
                 
-                <p>Below, you can see an annotated sketch of the mailroom kiosk. I noted all of the important features
+                <p className="p">Below, you can see an annotated sketch of the mailroom kiosk. I noted all of the important features
                     that are visible when you interact with the interface.  </p>
                 <div className="kiosk-pic"> 
                 <img src={kiosk} className="kiosk"/>
@@ -107,10 +107,10 @@ const Storyboard = () => {
             <div class="subsection">
                 <h1>02. Researching Users</h1>
                 <h3>Observations</h3>
-                <p>To create the personas and their corresponding storyboards, I observed and interviewed users of the Brown Mailroom kiosk. 
+                <p className="p">To create the personas and their corresponding storyboards, I observed and interviewed users of the Brown Mailroom kiosk. 
                     I ensured that I had the users' consent before I conducted this analysis.
                 </p>
-                <p> Key observations
+                <p className="p"> Key observations
                 </p>
                 <ul>
                 <li>All users approached the interface with their card already in their hand. </li>
@@ -119,7 +119,7 @@ const Storyboard = () => {
                     once stripe down and then had to re-swipe (this time stripe down) as the card reader did not read the card correctly. </li>
                 </ul>
                 <h3>Interviews</h3>
-                <p>I interviewed three different individuals who interacted with the kiosk. The questions I asked were as follows:</p>
+                <p className="p">I interviewed three different individuals who interacted with the kiosk. The questions I asked were as follows:</p>
                 <ul>
                 <li>Is there anything you think is missing in the kiosk design? </li>
                 <li>Do you experience any issues when you swipe your card? Does the card reader consistently work?</li>
@@ -127,10 +127,10 @@ const Storyboard = () => {
                 <li>  Do you think that this system is efficient?  </li>
                 <li> Do you come here where you're in a rush? </li>
                 </ul>
-                <p> Generally, people had similar experiences with the interface.  
+                <p className="p"> Generally, people had similar experiences with the interface.  
                     All three individuals found the kiosk intuitive when they first tried to use it. However, despite how simple they 
                     find it to use, they don't go to the mailroom when they're in a rush due to the overwhelming number of people in the mailroom.
-                <p> The interviewees also had some interesting suggestions for how the school could improve the kiosk experience.</p>
+                <p className="p"> The interviewees also had some interesting suggestions for how the school could improve the kiosk experience.</p>
                     <ul> 
                         <li> One person mentioned that it would be helpful if the kiosks had better card readers and that they frequently had to swipe 
                             their card numerous times in order for the card reader to register the card correctly</li> 
@@ -150,10 +150,10 @@ const Storyboard = () => {
         <section class="creating">
             <div class="subsection">    
             <h1>03. Creating Personas</h1>
-            <p> Following these observations and interviews, I created two personas: Tired Teal and Busy Bob. These personas were 
+            <p className="p"> Following these observations and interviews, I created two personas: Tired Teal and Busy Bob. These personas were 
                 inspired by the kiosk users I observed and the information I gathered during the interview process.  </p>
             <h3>Tired Teal</h3>
-            <p> The first persona I created was Tire Teal. Tired Teal is a senior at Brown and is going through full-time recruiting,
+            <p className="p"> The first persona I created was Tire Teal. Tired Teal is a senior at Brown and is going through full-time recruiting,
                  and she just remembered it is the last day she can pick up her packages that have been in the mailroom for 30 days. Part
                  of Brown's Mailroom policy is that if you have left your package unclaimed in the mailroom for 30 days, then the mailroom
                  will throw it out. 
@@ -163,7 +163,7 @@ const Storyboard = () => {
             </div>
                 
             <h3>Busy Bob</h3>
-            <p> The second persona I created was Busy Bob. Busy Bob is a freshman who has just joined 5 different clubs and has been running 
+            <p className="p"> The second persona I created was Busy Bob. Busy Bob is a freshman who has just joined 5 different clubs and has been running 
                 from meeting to meeting, so the only time he can make it to the mailroom is during lunch time, which is the mailroom rush hour.
                 
                     </p>
@@ -178,7 +178,7 @@ const Storyboard = () => {
         <section class="storyboard">
             <div class="subsection">
                 <h1>04. Storyboard</h1>
-                <p> To further develop my understanding of those who use the mailroom kiosk, I created a storyboard
+                <p className="p"> To further develop my understanding of those who use the mailroom kiosk, I created a storyboard
                     for Tired Teal. This storyboard walks through her experience using the kiosk and alos takes into 
                     account her feelings / emotions and challenges she faces.
                      </p>
@@ -188,7 +188,7 @@ const Storyboard = () => {
         <section class="reflection">
             <div class="subsection">
                 <h1>05. Reflection</h1>
-                <p> This project was a great intro to the UX researcher process. I learned how to interview individuals using a digital interface and 
+                <p className="p"> This project was a great intro to the UX researcher process. I learned how to interview individuals using a digital interface and 
                     considered both visible interactions (such as swiping a Brown ID through the kiosk) and invisiable interactions (such as how people's 
                     expectations when using the kiosk inform their feelings about it). 
                      </p>

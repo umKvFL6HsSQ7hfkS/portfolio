@@ -73,6 +73,14 @@ h4{
     padding: 0px;
 }
 
+.type{
+    font-size: 20px;
+}
+
+.list-iterative{
+    font-size: 20px;
+}
+
 .project-background{
     display: flex;
     justify-content: space-between;
