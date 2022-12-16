@@ -14,7 +14,6 @@ const Storyboard = () => {
     return <div className="white-background"> 
             
             
-        <div className="persona-intro">
             <div className="persona-intro-words"> 
             <div className="persona-intro-text"> 
             <h1 className="header-persona" > Personas & Storyboarding </h1>
@@ -22,7 +21,7 @@ const Storyboard = () => {
             </div>
             <img src={personas} className="personas-header-img"/>
             </div>
-        </div> 
+
         <div className="background-persona">
         <ScrollToTop/>
 
