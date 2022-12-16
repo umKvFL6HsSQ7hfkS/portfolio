@@ -5,7 +5,11 @@ import Link from "react-scroll/modules/components/Link";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import './RoomCarousel.css';
 import ScrollToTop from "./ScrollToTop";
+import { NavLink } from "react-router-dom";
 import animeHeader from "../images/anime-header.png";
+import redMock from "../images/redesign-mockup.png";
+import roomCover2 from "../images/roomkastCover2.png";
+import personas from "../images/personas.png";
 
 
 const AnimeList = () => {
@@ -191,6 +195,56 @@ const AnimeList = () => {
             </div>
         </section>
         </div>
+
+        <div className="foot-green"> 
+        <h2 className="header-items"> Check out some other items on the menu!</h2>
+        <div className="selections"> 
+       
+        
+        <NavLink to={'../Storyboard'} target="_blank" style={{ textDecoration: 'none' }}>
+
+        <div className='plate-menu2'> 
+        <div className='overlay-menu2' > 
+        <div className='front-menu2'> 
+        <h4> Storyboard & Personas </h4>
+        </div>
+        <div className='back-menu2'> 
+        <img src={personas} className='menu-img'/>
+        </div>
+        </div>
+        </div>
+        </NavLink> 
+
+        <NavLink to={'../Redesign'} target="_blank" style={{ textDecoration: 'none' }} >
+        <div className='plate-menu3'> 
+        <div className='overlay-menu3'> 
+        <div className='front-menu3'> 
+        <h4> Responsive Redesign </h4>
+        </div>
+        <div className='back-menu3'> 
+        <img src={redMock} className='menu-img'/>
+        </div>
+        </div>
+        </div>
+        </NavLink>
+
+
+        <NavLink to={'../Iterative'} target="_blank" style={{ textDecoration: 'none' }}>
+        <div className='plate-menu1'> 
+        <div className='overlay-menu1' > 
+        <div className='front-menu1'> 
+        <h4> Iterative Design </h4>
+        </div>
+        <div className='back-menu1'> 
+        <img src={roomCover2} className='menu-img'/>
+        </div>
+        </div>
+        </div>
+        </NavLink> 
+
+        </div> 
+        </div>
+
     </div>
 };
 

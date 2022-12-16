@@ -15,6 +15,10 @@ import headerImg from "../images/redesign/header-image.png";
 import Accordion from 'react-bootstrap/Accordion';
 import Iframe from "react-iframe";
 import { NavLink } from "react-router-dom";
+import redMock from "../images/redesign-mockup.png";
+import animePic2 from "../images/animecard2.png";
+import roomCover2 from "../images/roomkastCover2.png";
+import personas from "../images/personas.png";
 
 const Redesign = () => {
     return  <div className="white-background">
@@ -224,6 +228,54 @@ const Redesign = () => {
             </div>
         </section>
     </div>
+    <div className="foot-yellow"> 
+        <h2 className="header-items"> Check out some other items on the menu!</h2>
+        <div className="selections"> 
+       
+        
+        <NavLink to={'../Storyboard'} target="_blank" style={{ textDecoration: 'none' }}>
+
+        <div className='plate-menu2'> 
+        <div className='overlay-menu2' > 
+        <div className='front-menu2'> 
+        <h4> Storyboard & Personas </h4>
+        </div>
+        <div className='back-menu2'> 
+        <img src={personas} className='menu-img'/>
+        </div>
+        </div>
+        </div>
+        </NavLink> 
+
+        <NavLink to={'../AnimeList'} target="_blank" style={{ textDecoration: 'none' }} >
+        <div className='plate-menu4'> 
+        <div className='overlay-menu4'> 
+        <div className='front-menu4'> 
+        <h4> My Anime List </h4>
+        </div>
+        <div className='back-menu4'> 
+        <img src={animePic2} className='menu-img'/>
+        </div>
+        </div>
+        </div>
+        </NavLink>
+
+        
+        <NavLink to={'../Iterative'} target="_blank" style={{ textDecoration: 'none' }}>
+        <div className='plate-menu1'> 
+        <div className='overlay-menu1' > 
+        <div className='front-menu1'> 
+        <h4> Iterative Design </h4>
+        </div>
+        <div className='back-menu1'> 
+        <img src={roomCover2} className='menu-img'/>
+        </div>
+        </div>
+        </div>
+        </NavLink> 
+
+        </div> 
+        </div>
     </div>
 
 };

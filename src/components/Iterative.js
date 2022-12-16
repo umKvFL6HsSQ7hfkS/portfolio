@@ -13,7 +13,11 @@ import 'aos/dist/aos.css';
 import * as AOS from 'aos/dist/aos.js';
 import { useEffect } from 'react';
 import { Link } from "react-scroll";
-
+import redMock from "../images/redesign-mockup.png";
+import animePic2 from "../images/animecard2.png";
+import roomCover2 from "../images/roomkastCover2.png";
+import personas from "../images/personas.png";
+import { NavLink } from "react-router-dom";
 
 const Iterative = () => {
 
@@ -310,6 +314,54 @@ const Iterative = () => {
             </div>
         </section>
     </div>
+    <div className="foot-blue"> 
+        <h2 className="header-items"> Check out some other items on the menu!</h2>
+        <div className="selections"> 
+       
+        
+        <NavLink to={'../Storyboard'} target="_blank" style={{ textDecoration: 'none' }}>
+
+        <div className='plate-menu2'> 
+        <div className='overlay-menu2' > 
+        <div className='front-menu2'> 
+        <h4> Storyboard & Personas </h4>
+        </div>
+        <div className='back-menu2'> 
+        <img src={personas} className='menu-img'/>
+        </div>
+        </div>
+        </div>
+        </NavLink> 
+
+        <NavLink to={'../Redesign'} target="_blank" style={{ textDecoration: 'none' }} >
+        <div className='plate-menu3'> 
+        <div className='overlay-menu3'> 
+        <div className='front-menu3'> 
+        <h4> Responsive Redesign </h4>
+        </div>
+        <div className='back-menu3'> 
+        <img src={redMock} className='menu-img'/>
+        </div>
+        </div>
+        </div>
+        </NavLink>
+
+        
+        <NavLink to={'../AnimeList'} target="_blank" style={{ textDecoration: 'none' }}>
+        <div className='plate-menu4'> 
+        <div className='overlay-menu4' > 
+        <div className='front-menu4'> 
+        <h4> My Anime List </h4>
+        </div>
+        <div className='back-menu4'> 
+        <img src={animePic2} className='menu-img'/>
+        </div>
+        </div>
+        </div>
+        </NavLink> 
+
+        </div> 
+        </div>
     </div>
 
 };

@@ -11,6 +11,7 @@ import PersonaCarousel from "./PersonaCarousel";
 import { NavLink } from "react-router-dom";
 import roomCover2 from "../images/roomkastCover2.png";
 import redMock from "../images/redesign-mockup.png";
+import animePic2 from "../images/animecard2.png";
 
 
 const Storyboard = () => {
@@ -199,8 +200,8 @@ const Storyboard = () => {
             </div>
         </section>
         </div>
-        {/* <div className="foot"> 
-        <h2 className="header-items"> Other items on the menu:</h2>
+        <div className="foot"> 
+        <h2 className="header-items"> Check out some other items on the menu!</h2>
         <div className="selections"> 
        
         
@@ -229,10 +230,23 @@ const Storyboard = () => {
         </div>
         </div>
         </div>
-        </NavLink> 
+        </NavLink>
+
+        <NavLink to={'../AnimeList'} target="_blank" style={{ textDecoration: 'none' }}>
+        <div className='plate-menu4'> 
+        <div className='overlay-menu4'> 
+        <div className='front-menu4'> 
+        <h4> My Anime List </h4>
+        </div>
+        <div className='back-menu4'> 
+        <img src={animePic2} className='menu-img'/>
+        </div>
+        </div>
+        </div>
+    </NavLink> 
 
         </div> 
-        </div> */}
+        </div>
         
     </div>
 };

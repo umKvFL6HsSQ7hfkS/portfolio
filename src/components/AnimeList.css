@@ -50,6 +50,99 @@
     justify-content: space-between;
 }
 
+/* Pink plate */
+
+.plate-menu2{
+    position: relative;
+    background-color: white;
+    height: 350px;
+    width: 350px;
+    /* border-color: black;
+    border-style: solid; */
+    /* border-radius: 400px; */
+    border-radius: 50%;
+    background: #fdd5fb;
+    /* box-shadow: inset 31px 31px 73px #d5cab9,
+                inset -31px -31px 73px #fffffb; */
+   
+    display: flex;
+    justify-content: center;
+    box-shadow: 
+    /* Outer Plate Bevel */
+    inset 0 5px 3px 0 #fce0f5, /* Top */
+    inset 0 -5px 3px 0 rgba(175, 174, 175, 0.78), /* Bottom */
+    inset 3px 0 2px 0 rgba(172, 171, 172, 0.25), /* Left */
+    inset -3px 0 2px 0 rgba(0, 0, 0, 0.25), /* Right */
+    
+    /* Outer Plate Shadow */
+    inset 0 5px 46px 0 rgba(214, 214, 214, 0.4),
+    0 5px 13px 0 rgba(148, 145, 148, 0.75)
+    ;
+  }
+  
+  .overlay-menu2{
+    align-items: center;
+    z-index: 10;
+    height: 225px;
+    width: 225px;
+    background: #fcd0fc;
+    border-radius: 50%;
+    margin-top: 65px;
+    color: black;
+    box-shadow: inset 0 0 4px 3px #efd1f5,
+    inset 0 8px 16px 4px rgba(131, 130, 131, 0.25);
+  }
+  
+  .overlay-menu2{
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    text-align: center;
+    color: black;
+  
+    
+  }
+  
+  
+  .plate-menu2:hover .overlay-menu2 {
+    transform: rotateY(180deg);
+    
+  }
+  
+  
+  .front-menu2, .back-menu2 {
+    position: absolute;
+    /* position: relative; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* width: 100%;
+    height: 100%; */
+  }
+  
+  .front-menu2 {
+    color: black ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 80%;
+  }
+  
+  
+  
+  .back-menu2{
+    
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+  }
+
 
 /* .header-iterative{
     font-weight: bold;
@@ -79,4 +172,9 @@ padding-top: 10px;
 text-decoration: none;
 font-weight: bold;
 font-size: 30px;
+}
+
+.foot-green{
+    background-color: #c4f3c4;
+    margin-top: 50px;
 }

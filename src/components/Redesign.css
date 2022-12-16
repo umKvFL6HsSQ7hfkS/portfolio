@@ -30,6 +30,11 @@ background-color: white;
 
 }
 
+.foot-yellow{
+    background-color: #fafdd5;
+    margin-top: 50px;
+}
+
 
 .redesign-intro-text{
     display: flex;
