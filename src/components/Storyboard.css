@@ -167,3 +167,214 @@ h3, h4{
 .block {
     padding-top: 30px;
 }
+
+.foot{
+    background-color: #fdd5fd;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.reflection{
+    padding-bottom: 50px;
+}
+
+.selections{
+padding-top: 50px;
+padding-bottom: 50px;
+display: grid;
+}
+
+.header-items{
+    padding-bottom: 50px;;
+}
+
+/* Blue plate */ 
+.plate-menu1{
+    position: relative;
+    background-color: white;
+    height: 350px;
+    width: 350px;
+    /* border-color: black;
+    border-style: solid; */
+    /* border-radius: 400px; */
+    border-radius: 50%;
+    background: #d5edfd;
+    /* box-shadow: inset 31px 31px 73px #d5cab9,
+                inset -31px -31px 73px #fffffb; */
+   
+    display: flex;
+    justify-content: center;
+    box-shadow: 
+    /* Outer Plate Bevel */
+    inset 0 5px 3px 0 #e0f1fc, /* Top */
+    inset 0 -5px 3px 0 rgba(175, 174, 174, 0.78), /* Bottom */
+    inset 3px 0 2px 0 rgba(172, 171, 171, 0.25), /* Left */
+    inset -3px 0 2px 0 rgba(0,0,0,.25), /* Right */
+    
+    /* Outer Plate Shadow */
+    inset 0 5px 46px 0 rgba(214, 214, 214, 0.4),
+    0 5px 13px 0 rgba(148, 145, 145, 0.75)
+    ;
+  }
+  
+  .overlay-menu1{
+    align-items: center;
+    z-index: 10;
+    height: 225px;
+    width: 225px;
+    background: #d0eafc;
+    border-radius: 50%;
+    margin-top: 65px;
+    color: black;
+    box-shadow: inset 0 0 4px 3px #d1e6f5,
+    inset 0 8px 16px 4px rgba(131, 130, 130, 0.25);
+  }
+  
+  .overlay-menu1{
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    text-align: center;
+    color: black;
+  
+    
+  }
+  
+  
+  .plate-menu1:hover .overlay-menu1 {
+    transform: rotateY(180deg);
+    
+  }
+  
+  
+  .front-menu1, .back-menu1 {
+    position: absolute;
+    /* position: relative; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* width: 100%;
+    height: 100%; */
+  }
+  
+  .front-menu1 {
+    color: black ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 80%;
+  }
+
+  .back-menu1{
+  
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  /* Yellow plate */
+
+.plate-menu3{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    width: 350px;
+    /* border-color: black;
+    border-style: solid; */
+    /* border-radius: 400px; */
+    border-radius: 50%;
+    background: #fdf7d5;
+    /* box-shadow: inset 31px 31px 73px #d5cab9,
+                inset -31px -31px 73px #fffffb; */
+   
+    display: flex;
+    justify-content: center;
+    box-shadow: 
+    /* Outer Plate Bevel */
+    inset 0 5px 3px 0 #fcf7e0, /* Top */
+    inset 0 -5px 3px 0 rgba(175, 175, 174, 0.78), /* Bottom */
+    inset 3px 0 2px 0 rgba(172, 172, 171, 0.25), /* Left */
+    inset -3px 0 2px 0 rgba(0, 0, 0, 0.25), /* Right */
+    
+    /* Outer Plate Shadow */
+    inset 0 5px 46px 0 rgba(214, 214, 214, 0.4),
+    0 5px 13px 0 rgba(148, 147, 145, 0.75)
+    ;
+  }
+  
+  .overlay-menu3{
+    align-items: center;
+    z-index: 10;
+    height: 225px;
+    width: 225px;
+    background: #fcfbd0;
+    border-radius: 50%;
+    margin-top: 65px;
+    color: black;
+    box-shadow: inset 0 0 4px 3px #f5f4d1,
+    inset 0 8px 16px 4px rgba(131, 131, 130, 0.25);
+  }
+  
+  .overlay-menu3{
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    text-align: center;
+    color: black;
+  }
+  
+  .plate-menu3:hover .overlay-menu3 {
+    transform: rotateY(180deg); 
+  }
+  
+  .front-menu3, .back-menu3 {
+    position: absolute;
+    /* position: relative; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* width: 100%;
+    height: 100%; */
+  }
+  
+  .front-menu3 {
+    color: black ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 80%;
+  }
+  
+  .back-menu3{
+    
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .menu-img{
+        height: 130px;
+        width: 140px;
+        border: white;
+        border-style: solid;
+        border-radius: 10px;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+
+  }

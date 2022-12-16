@@ -204,7 +204,9 @@ p{
   font-weight: normal;
 }
 
-
+.descriptions{
+  font-size: 18px;
+}
 
 .lottie-chef {
   border: rgb(250, 230, 210);

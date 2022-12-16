@@ -8,6 +8,9 @@ import { Parallax, ParallaxBanner, ParallaxProvider } from 'react-scroll-paralla
 import ScrollToTop from "./ScrollToTop";
 import { Link } from "react-scroll";
 import PersonaCarousel from "./PersonaCarousel";
+import { NavLink } from "react-router-dom";
+import roomCover2 from "../images/roomkastCover2.png";
+import redMock from "../images/redesign-mockup.png";
 
 
 const Storyboard = () => {
@@ -196,7 +199,41 @@ const Storyboard = () => {
             </div>
         </section>
         </div>
+        {/* <div className="foot"> 
+        <h2 className="header-items"> Other items on the menu:</h2>
+        <div className="selections"> 
+       
+        
+        <NavLink to={'../Iterative'} target="_blank" style={{ textDecoration: 'none' }}>
 
+        <div className='plate-menu1'> 
+        <div className='overlay-menu1' > 
+        <div className='front-menu1'> 
+        <h4> Iterative Design </h4>
+        </div>
+        <div className='back-menu1'> 
+        <img src={roomCover2} className='menu-img'/>
+        </div>
+        </div>
+        </div>
+        </NavLink> 
+
+        <NavLink to={'../Redesign'} target="_blank" style={{ textDecoration: 'none' }} >
+        <div className='plate-menu3'> 
+        <div className='overlay-menu3'> 
+        <div className='front-menu3'> 
+        <h4> Responsive Redesign </h4>
+        </div>
+        <div className='back-menu3'> 
+        <img src={redMock} className='menu-img'/>
+        </div>
+        </div>
+        </div>
+        </NavLink> 
+
+        </div> 
+        </div> */}
+        
     </div>
 };
 

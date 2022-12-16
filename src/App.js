@@ -142,7 +142,7 @@ function App() {
         <div className='overlay2'> 
         <div className='front2'> 
         <h4> Storyboard & Personas</h4>
-        <p> Considering the effectiveness of the Brown Mailroom Kiosk.</p>
+        <p className='descriptions'> Considering the effectiveness of the Brown Mailroom Kiosk.</p>
         </div>
         <div className='back2'> 
         <img src={personas} className='anime-img'/>
@@ -157,7 +157,7 @@ function App() {
         <div className='overlay1' > 
         <div className='front1'> 
         <h4> Iterative Design </h4>
-        <p> Group project where we created an emerging startup's interface solely based 
+        <p className='descriptions'> Group project where we created an emerging startup's interface solely based 
           on their mission.</p>
         </div>
         <div className='back1'> 
@@ -173,7 +173,7 @@ function App() {
         <div className='overlay3'> 
         <div className='front3'> 
         <h4> Responsive Redesign </h4>
-        <p> Redesigned a poorly designed website using HTML/CSS.</p>
+        <p className='descriptions'> Redesigned a poorly designed website using HTML/CSS.</p>
         </div>
         <div className='back3'> 
         <img src={redMock} className='anime-img'/>
@@ -188,7 +188,7 @@ function App() {
         <div className='overlay4'> 
         <div className='front4'> 
         <h4> My Anime List </h4>
-        <p> Used React to deploy a website that sorts, filters, and saves animes.</p>
+        <p className='descriptions'> Used React to deploy a website that sorts, filters, and saves animes.</p>
         </div>
         <div className='back4'> 
         <img src={animePic2} className='anime-img'/>
