@@ -41,7 +41,7 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
+   "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
@@ -52,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "web-vitals": "^3.1.0"
   }
 }
