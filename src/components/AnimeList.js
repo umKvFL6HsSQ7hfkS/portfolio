@@ -71,7 +71,7 @@ const AnimeList = () => {
 
     <section class="context"> 
     <h1 >00. Context </h1>
-   <p>     In this project, I developed an interactive interface by combining interactive components
+   <p className="words-anime">     In this project, I developed an interactive interface by combining interactive components
        and an internal data state. This was our first assignment in React, and much of my process was focused
        on learning how to use components and States to create an intuitive application for my users.</p>
        </section>
@@ -80,12 +80,12 @@ const AnimeList = () => {
             <div class="subsection">
                 <h1>01. Research</h1>
                 <h3>Selecting the Topic and Considering Requirements</h3>
-                <p>When determining what interface I wanted to create, I decided that it would be most enjoyable to 
+                <p className="words-anime">When determining what interface I wanted to create, I decided that it would be most enjoyable to 
                     create something that I felt I would personally use. Since I really enjoy anime, I decided to make
                     a "My Anime List" as a way to store different anime while also tracking my favorites.
                 </p>
 
-                <p>When structuring my code, I had to keep in mind the required functionality:
+                <p className="words-anime">When structuring my code, I had to keep in mind the required functionality:
                 </p>
                 <ul>
                 <li>The user should be able to filter by at least 2 categories at once.</li>
@@ -112,7 +112,7 @@ const AnimeList = () => {
             <h1>02. Ideating the Design </h1>
             <div class="subsection">
             <h3>Deciding the Code Structure</h3>
-            <p> Taking into account the requirements above, I decided to use three components: Aggregator.js, ShowItem.js, and App.js. 
+            <p className="words-anime"> Taking into account the requirements above, I decided to use three components: Aggregator.js, ShowItem.js, and App.js. 
                 I used the aggregator component to aggregate the total number of seasons across all shows added to the "Favorites" list.
                 I used ShowItem.js as the way to transfer information about each show (which was held in my data.js file) on a React card.
                 Lastly, App.js contained the filtering and sorting actions as well as the actual display of each card component.</p>
@@ -122,7 +122,7 @@ const AnimeList = () => {
     </section>
     <h3>Usability</h3>
 
-        <p>Card usability</p>
+        <p className="words-anime">Card usability</p>
         <ul>
         <li>I decided to list 12 different anime with their cover image, genre, subcategory, and number of seasons--
         all of this information is displayed clearly on each ShowItem component.
@@ -132,7 +132,7 @@ const AnimeList = () => {
             added to the Favorites list already. 
         </li>
         </ul>
-        <p>Filter and sorting usability</p>
+        <p className="words-anime">Filter and sorting usability</p>
         <ul>
         <li> I created clear buttons for users to press in order to filter and sort.
         </li>
@@ -150,7 +150,7 @@ const AnimeList = () => {
         </li>
         </ul>
         <div> 
-            <p> Throughout the design, I kept the users considerations in mind -- how should I present each anime so that 
+            <p className="words-anime"> Throughout the design, I kept the users considerations in mind -- how should I present each anime so that 
                 the user can easily take in information, where is the best place to put buttons and what should those buttons look like, and how do I make the hierarchy 
                 clear throughout the page.  
             </p>
@@ -162,7 +162,7 @@ const AnimeList = () => {
            
             <h5>"Favorites" list </h5>
             
-            <p>
+            <p className="words-anime">
             To add an anime to your "Favorites", all you have to 
             do is press the "Add to Favorite" button you see on the card. When you add an anime to this list, 
             you will the name of the anime at the bottom of the page; below that, you will also see the total number
@@ -170,7 +170,7 @@ const AnimeList = () => {
             
             </p>
             <h5>Filtering and Sorting </h5>
-            <p>
+            <p className="words-anime">
             You can filter by genre and/or subcategory;
             If you select two buttons in the same filter (ie. "Supernatural" and "Action"), shows" that fall into either
             category will appear. If you select buttons across the two filters (ie. "Shonen" and "Action") shows
@@ -182,7 +182,7 @@ const AnimeList = () => {
         <section class="reflection">
             <div class="subsection">
                 <h1>03. Reflection</h1>
-                <p> This project was a great chance to learn React hands-on as I grappled with how components and props work; additionally,
+                <p className="words-anime"> This project was a great chance to learn React hands-on as I grappled with how components and props work; additionally,
                     I experimented with Boostrap to also focus on the aesthetic aspect of my design. These skills were extremely valuable to gain, especially since I used them
                     to build this very portfolio! This project served as great inspiration for me in terms of experimenting with
                     UI elemnts as well -- I plan to challenge myself by using different styles of buttons like radio buttons in upcoming projects.

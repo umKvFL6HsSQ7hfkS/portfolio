@@ -16,7 +16,7 @@
 
 .intro{
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .persona-intro{
@@ -26,7 +26,7 @@
 }
 
 .p{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .background-persona{
@@ -93,7 +93,7 @@
 
 p, b, li{
     line-height: 150%;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 0;
     margin-block-start: 0.5em;
     margin-block-end: 0;

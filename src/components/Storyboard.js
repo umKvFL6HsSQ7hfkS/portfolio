@@ -87,7 +87,7 @@ const Storyboard = () => {
         <section class="interface">
             <div class="subsection">
                 <h1 >01. Choosing the Interface </h1>
-                <h5>Why the Kiosk?</h5>
+                <h3>Why the Kiosk?</h3>
                 <p className="p"> The requirement was to choose a public, easily accessible interface that people interact with on a daily basis.
                     Having retrieved many packages from the Mailroom throughout my years at Brown, I thought that the Brown 
                     Mailroom Kiosk would be an interesting interface to observe.
