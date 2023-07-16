@@ -27,27 +27,27 @@ function App() {
       // Create Ref element.
       const el = useRef(null);
 
-      useEffect(() => {
-        const typed = new Typed(el.current, {
-          strings: ["Hi! Welcome to my portfolio!"], // Strings to display
-          // Speed settings, try diffrent values untill you get good results
+      // useEffect(() => {
+      //   const typed = new Typed(el.current, {
+      //     strings: ["Hi! Welcome to my portfolio!"], // Strings to display
+      //     // Speed settings, try diffrent values untill you get good results
   
-          startDelay: 0,
-          typeSpeed: 40,
-          showCursor: false
-          // backSpeed: 100,
-          // backDelay: 100
-        });
+      //     startDelay: 0,
+      //     typeSpeed: 40,
+      //     showCursor: false
+      //     // backSpeed: 100,
+      //     // backDelay: 100
+      //   });
     
-        // Destropying
-        return () => {
-          typed.destroy();
-        };
-      }, []);
+      //   // Destropying
+      //   return () => {
+      //     typed.destroy();
+      //   };
+      // }, []);
 
-      useEffect(() => {
-        AOS.init();
-      }, [])
+      // useEffect(() => {
+      //   AOS.init();
+      // }, [])
 
   return (
     <div className="App">
@@ -74,10 +74,11 @@ function App() {
         </nav>
       </header>
       <section className="home">
+        <p> About me (handrawn image coming shortly!)</p>
         
       <p className="words" ref={el}></p>
   
-
+{/* 
       <Player className='ramen'
             autoplay
             loop
@@ -85,7 +86,7 @@ function App() {
             style={{ height: '300px', width: '300px' }}
           >
             <Controls visible={false}  />
-          </Player>
+          </Player> */}
           {/* <div className='food-drag'> 
       <Draggable > 
       <Resizable
@@ -124,15 +125,15 @@ function App() {
       <section className="projects">
       
         <div className='project-title' data-aos="fade-up"> 
-        <p className='section-header'> This Semester's Menu </p>
-      <Player className='fork'
+        <p className='section-header'> UI/UX Projects </p>
+      {/* <Player className='fork'
             autoplay
             loop
             src="https://lottie.host/7187a5f5-f425-4515-965e-8353293158cd/2p7Rx7jM5k.json"
             style={{ height: '200px', width: '200px' }}
           >
             <Controls visible={false}  />
-          </Player>
+          </Player> */}
           </div>
           
       <div className='cards' > 
@@ -203,26 +204,26 @@ function App() {
 
       <section className="about">  
         <div className='abt-title' data-aos="fade-up"> 
-        <p className='section-header'> About the Chef </p>
+        <p className='section-header'> My Story </p>
         </div>
        
       <div className="abt-me" >
         <div className='first-about' data-aos="fade-up"> 
         <div className='lottie-box'> 
-        <Player className='lottie-chef'
+        {/* <Player className='lottie-chef'
             autoplay
             loop
             src="https://assets3.lottiefiles.com/private_files/lf30_3dLrkA.json"
             style={{ height: '300px', width: '300px' }}
           >
             <Controls visible={false}  />
-      </Player>
+      </Player> */}
         </div>
       
       <div className='little-about'> 
       <h4>A little bit about me </h4> 
       
-      <p>  I'm a student at Brown University studying CS-Econ and History. I've always enjoyed 
+      <p>  I'm a 2023 graduate from Brown University studying Computer Science-Economics and History. I've always enjoyed 
         creating things, so I thought it would be fun to take UI/UX, a class that allowed me to 
         focus on just that! 
     
@@ -236,25 +237,22 @@ function App() {
       <div className='second-about' data-aos="fade-up">
         
         <div className='inspo-about'> 
-        <h4>Design inspiration </h4> 
+        <h4>Where my work has taken me </h4> 
       
-          <p>  I've always loved creating things with food -- whether that be meals for 
-            friends and family or beautiful plates with contrasting colors and textures.
-            Coming into this class, I approached the creative process similarly to how
-            I cook at home. I started with a concept that I wanted to taste test 
-            and then built my designs from there, honing the product with the help 
-            of many taste testers from critiques and UX Factor! </p>
+          <p> I have a diverse professional backrgound, including everything between working at a startup, working as an
+            Investment Banking Summer Anlayst, and tutoring students K-12. I've tried to bring my experiences together 
+            throughout these projects, tkaing inspiration from things I've seen and problems I've encountered. I hope you enjoy! </p>
     
         </div> 
           <div className='lottie-container'> 
-              <Player className='lottie-pot'
+              {/* <Player className='lottie-pot'
                   autoplay
                   loop
                   src="https://assets5.lottiefiles.com/packages/lf20_v7kptb3h.json"
                   style={{ height: '300px', width: '300px' }}
                 >
                   <Controls visible={false}  />
-              </Player>
+              </Player> */}
           </div>
       </div>
       </div>

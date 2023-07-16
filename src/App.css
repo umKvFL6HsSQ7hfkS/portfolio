@@ -17,7 +17,7 @@
   /* margin-top: 80px; */
   /* background-image: url("./images/fruit-background.png");
   background-size: 1700px; */
-  background-color: rgb(250, 240, 226);
+  background-color: rgb(255, 248, 238);
   display: grid;
   padding-top: 100px;
   height: 100vh;
@@ -40,7 +40,7 @@
 }
 
 .projects{
-  background-color: rgb(250, 235, 218);
+  background-color: rgb(255, 248, 238);
   display: grid;
   height: 140vh;
   font-size: 32px;
@@ -53,7 +53,7 @@
 }
 
 .about{
-  background-color: rgb(250, 230, 210);
+  background-color: rgb(255, 248, 238);
   /* display: grid; */
   padding-top: 100px;
   height: 120vh;
