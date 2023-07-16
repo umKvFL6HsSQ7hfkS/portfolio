@@ -20,14 +20,46 @@
   background-color: rgb(255, 248, 238);
   display: grid;
   padding-top: 100px;
-  height: 100vh;
+  height:90vh;
   font-size: 32px;
   font-weight: bold;
 }
 
-.drag-notice{
+.home-entry{
+  display: flex;
+  margin-left: 15vh;
+  margin-right: 16vh;
+  align-items: center;
+  margin-top: -220px;
+
+}
+
+/* .drag-notice{
   font-size: 18px;
   margin-top: 65px;
+} */
+
+.mulan{
+  width: 70%;
+  padding: 100px;
+
+}
+
+.blurb{
+  text-align: left;
+  width: 50%;
+  margin-left: -100px;
+}
+
+
+.linkedin{
+  color: black;
+  font-size: 20px;
+  font-weight:normal;
+}
+
+.linkedin:hover{
+  color: rgb(235, 98, 98)
 }
 
 .food-drag{
@@ -37,6 +69,17 @@
   margin-bottom: auto;
   cursor: pointer;
   
+}
+
+.a-tag-content{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight:normal;
+}
+
+.a-tag-content:hover{
+  color:black
 }
 
 .projects{

@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import { useEffect } from 'react';
 import { Link } from "react-scroll";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
-import { NavLink } from "react-router-dom";
+import { NavLink, useHref } from "react-router-dom";
 import redMock from "../src/images/redesign-mockup.png";
 import animePic2 from "./images/animecard2.png";
 import roomCover2 from "./images/roomkastCover2.png";
@@ -14,7 +14,7 @@ import personas2 from "./images/personas2.png";
 import dumpling from "./images/dumpling.png"
 import noodles from "./images/noodles.png";
 import 'aos/dist/aos.css';
-
+import mulan from "./images/home-page-image1.png";
 import Draggable from 'react-draggable';
 import { Resizable } from 're-resizable';
 import * as AOS from 'aos/dist/aos.js';
@@ -74,9 +74,23 @@ function App() {
         </nav>
       </header>
       <section className="home">
-        <p> About me (handrawn image coming shortly!)</p>
+        <div className='home-entry'>
+          <div className='home-picture'> 
+            <img src={mulan} className='mulan'/>
+          </div>
+          <div className='blurb'> 
+          <h2> Hey, there!</h2>
+            <a className='a-tag-content'>  I'm Kat. I'm a designer (both CS and clothing), skier, Brown grad, and lover of music. 
+              Feel free to reach to me at katarina_stephan@alumni.brown.edu or check out my LinkedIn </a> 
+              <a className = "linkedin" href='https://www.linkedin.com/in/kstephan28/' target={"_blank"}>here!</a>
+          </div>
         
-      <p className="words" ref={el}></p>
+        </div>
+
+       
+
+        
+      {/* <p className="words" ref={el}></p> */}
   
 {/* 
       <Player className='ramen'
