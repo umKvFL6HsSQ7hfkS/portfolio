@@ -314,7 +314,7 @@ const Iterative = () => {
             </div>
         </section>
     </div>
-    <div className="foot-blue"> 
+    {/* <div className="foot-blue"> 
         <h2 className="header-items"> Check out some other items on the menu!</h2>
         <div className="selections"> 
        
@@ -361,7 +361,7 @@ const Iterative = () => {
         </NavLink> 
 
         </div> 
-        </div>
+        </div> */}
     </div>
 
 };

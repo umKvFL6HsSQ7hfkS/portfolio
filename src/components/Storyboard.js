@@ -200,7 +200,7 @@ const Storyboard = () => {
             </div>
         </section>
         </div>
-        <div className="foot"> 
+        {/* <div className="foot"> 
         <h2 className="header-items"> Check out some other items on the menu!</h2>
         <div className="selections"> 
        
@@ -246,7 +246,7 @@ const Storyboard = () => {
     </NavLink> 
 
         </div> 
-        </div>
+        </div> */}
         
     </div>
 };

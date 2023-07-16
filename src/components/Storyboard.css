@@ -202,7 +202,7 @@ flex-direction: row;
     /* border-color: black;
     border-style: solid; */
     /* border-radius: 400px; */
-    border-radius: 50%;
+    border-radius: 10%;
     background: #d5edfd;
     /* box-shadow: inset 31px 31px 73px #d5cab9,
                 inset -31px -31px 73px #fffffb; */
@@ -227,12 +227,12 @@ flex-direction: row;
     z-index: 10;
     height: 225px;
     width: 225px;
-    background: #d0eafc;
-    border-radius: 50%;
+    background: #d5edfd;
+    border-radius: 10%;
     margin-top: 65px;
     color: black;
-    box-shadow: inset 0 0 4px 3px #d1e6f5,
-    inset 0 8px 16px 4px rgba(131, 130, 130, 0.25);
+    /* box-shadow: inset 0 0 4px 3px #d1e6f5,
+    inset 0 8px 16px 4px rgba(131, 130, 130, 0.25); */
   }
   
   .overlay-menu1{
@@ -280,7 +280,7 @@ flex-direction: row;
     width: 100%;
     height: 100%;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 10%;
   }
 
   /* Yellow plate */
@@ -293,7 +293,7 @@ flex-direction: row;
     /* border-color: black;
     border-style: solid; */
     /* border-radius: 400px; */
-    border-radius: 50%;
+    border-radius: 10%;
     background: #fdf7d5;
     /* box-shadow: inset 31px 31px 73px #d5cab9,
                 inset -31px -31px 73px #fffffb; */
@@ -319,11 +319,11 @@ flex-direction: row;
     height: 225px;
     width: 225px;
     background: #fcfbd0;
-    border-radius: 50%;
+    border-radius: 10%;
     margin-top: 65px;
     color: black;
-    box-shadow: inset 0 0 4px 3px #f5f4d1,
-    inset 0 8px 16px 4px rgba(131, 131, 130, 0.25);
+    /* box-shadow: inset 0 0 4px 3px #f5f4d1,
+    inset 0 8px 16px 4px rgba(131, 131, 130, 0.25); */
   }
   
   .overlay-menu3{
@@ -353,7 +353,7 @@ flex-direction: row;
     justify-content: center;
     margin-top: 10px;
     width: 100%;
-    height: 80%;
+    height: 10%;
   }
   
   .back-menu3{
@@ -366,7 +366,7 @@ flex-direction: row;
     width: 100%;
     height: 100%;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 10%;
   }
 
 /* Green plate */

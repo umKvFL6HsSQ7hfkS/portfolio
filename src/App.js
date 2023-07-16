@@ -81,7 +81,7 @@ function App() {
           <div className='blurb'> 
           <h2> Hey, there!</h2>
             <a className='a-tag-content'>  I'm Kat. I'm a designer (both CS and clothing), skier, Brown grad, and lover of music. 
-              Feel free to reach to me at katarina_stephan@alumni.brown.edu or check out my LinkedIn </a> 
+              Feel free to reach out to me at katarina_stephan@alumni.brown.edu or check out my LinkedIn </a> 
               <a className = "linkedin" href='https://www.linkedin.com/in/kstephan28/' target={"_blank"}>here!</a>
           </div>
         
@@ -152,7 +152,7 @@ function App() {
           </div>
           
       <div className='cards' > 
-        <NavLink to={'../Storyboard'} target="_blank" style={{ textDecoration: 'none' }} ata-aos="fade-right">
+        <NavLink to={'../Storyboard'} target="_blank" style={{ textDecoration: 'none' }} data-aos="fade-right">
           
         <div className='plate2'> 
         <div className='overlay2'> 
@@ -256,7 +256,7 @@ function App() {
       
           <p> I have a diverse professional backrgound, including everything between working at a startup, working as an
             Investment Banking Summer Anlayst, and tutoring students K-12. I've tried to bring my experiences together 
-            throughout these projects, tkaing inspiration from things I've seen and problems I've encountered. I hope you enjoy! </p>
+            throughout these projects, taking inspiration from things I've seen and problems I've encountered. I hope you enjoy! </p>
     
         </div> 
           <div className='lottie-container'> 

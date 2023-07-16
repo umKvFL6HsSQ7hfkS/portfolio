@@ -228,7 +228,7 @@ const Redesign = () => {
             </div>
         </section>
     </div>
-    <div className="foot-yellow"> 
+    {/* <div className="foot-yellow"> 
         <h2 className="header-items"> Check out some other items on the menu!</h2>
         <div className="selections"> 
        
@@ -275,7 +275,7 @@ const Redesign = () => {
         </NavLink> 
 
         </div> 
-        </div>
+        </div> */}
     </div>
 
 };

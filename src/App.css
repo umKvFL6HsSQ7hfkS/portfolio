@@ -59,7 +59,7 @@
 }
 
 .linkedin:hover{
-  color: rgb(235, 98, 98)
+  color: rgb(235, 98, 98);
 }
 
 .food-drag{
@@ -290,7 +290,7 @@ p{
   /* border-color: black;
   border-style: solid; */
   /* border-radius: 400px; */
-  border-radius: 50%;
+  border-radius: 10%;
   background: #d5edfd;
   /* box-shadow: inset 31px 31px 73px #d5cab9,
               inset -31px -31px 73px #fffffb; */
@@ -315,12 +315,12 @@ p{
   z-index: 10;
   height: 325px;
   width: 325px;
-  background: #d0eafc;
-  border-radius: 50%;
+  background: #d5edfd;
+  border-radius: 10%;
   margin-top: 65px;
   color: black;
-  box-shadow: inset 0 0 4px 3px #d1e6f5,
-  inset 0 8px 16px 4px rgba(131, 130, 130, 0.25);
+  /* box-shadow: inset 0 0 4px 3px #d1e6f5,
+  inset 0 8px 16px 4px rgba(131, 130, 130, 0.25); */
 }
 
 .overlay1{
@@ -370,7 +370,7 @@ p{
   width: 100%;
   height: 100%;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 
@@ -384,7 +384,7 @@ p{
   /* border-color: black;
   border-style: solid; */
   /* border-radius: 400px; */
-  border-radius: 50%;
+  border-radius: 10%;
   background: #fdd5fb;
   /* box-shadow: inset 31px 31px 73px #d5cab9,
               inset -31px -31px 73px #fffffb; */
@@ -409,12 +409,12 @@ p{
   z-index: 10;
   height: 325px;
   width: 325px;
-  background: #fcd0fc;
-  border-radius: 50%;
+  background: #fdd5fb;
+  border-radius: 10%;
   margin-top: 65px;
   color: black;
-  box-shadow: inset 0 0 4px 3px #efd1f5,
-  inset 0 8px 16px 4px rgba(131, 130, 131, 0.25);
+  /* box-shadow: inset 0 0 4px 3px #efd1f5,
+  inset 0 8px 16px 4px rgba(131, 130, 131, 0.25); */
 }
 
 .overlay2{
@@ -422,14 +422,13 @@ p{
   transform-style: preserve-3d;
   text-align: center;
   color: black;
-
   
 }
 
 
+
 .plate2:hover .overlay2 {
   transform: rotateY(180deg);
-  
 }
 
 
@@ -464,7 +463,7 @@ p{
   width: 100%;
   height: 100%;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 /* Yellow plate */
@@ -477,7 +476,7 @@ p{
   /* border-color: black;
   border-style: solid; */
   /* border-radius: 400px; */
-  border-radius: 50%;
+  border-radius: 10%;
   background: #fdf7d5;
   /* box-shadow: inset 31px 31px 73px #d5cab9,
               inset -31px -31px 73px #fffffb; */
@@ -502,12 +501,12 @@ p{
   z-index: 10;
   height: 325px;
   width: 325px;
-  background: #fcfbd0;
-  border-radius: 50%;
+  background: #fdf7d5;
+  border-radius: 10%;
   margin-top: 65px;
   color: black;
-  box-shadow: inset 0 0 4px 3px #f5f4d1,
-  inset 0 8px 16px 4px rgba(131, 131, 130, 0.25);
+  /* box-shadow: inset 0 0 4px 3px #f5f4d1,
+  inset 0 8px 16px 4px rgba(131, 131, 130, 0.25); */
 }
 
 .overlay3{
@@ -550,7 +549,7 @@ p{
   width: 100%;
   height: 100%;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 
@@ -564,7 +563,7 @@ p{
   /* border-color: black;
   border-style: solid; */
   /* border-radius: 400px; */
-  border-radius: 50%;
+  border-radius: 10%;
   background: #dcfdd5;
   /* box-shadow: inset 31px 31px 73px #d5cab9,
               inset -31px -31px 73px #fffffb; */
@@ -589,12 +588,12 @@ p{
   z-index: 10;
   height: 325px;
   width: 325px;
-  background: #d7fcd0;
-  border-radius: 50%;
+  background: #dcfdd5;
+  border-radius: 10%;
   margin-top: 65px;
   color: black;
-  box-shadow: inset 0 0 4px 3px #d8f5d1,
-  inset 0 8px 16px 4px rgba(130, 131, 130, 0.25);
+  /* box-shadow: inset 0 0 4px 3px #d8f5d1,
+  inset 0 8px 16px 4px rgba(130, 131, 130, 0.25); */
 }
 
 .overlay4{
@@ -637,7 +636,7 @@ p{
   width: 100%;
   height: 100%;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 

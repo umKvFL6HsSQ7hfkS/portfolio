@@ -196,7 +196,7 @@ const AnimeList = () => {
         </section>
         </div>
 
-        <div className="foot-green"> 
+        {/* <div className="foot-green"> 
         <h2 className="header-items"> Check out some other items on the menu!</h2>
         <div className="selections"> 
        
@@ -243,7 +243,7 @@ const AnimeList = () => {
         </NavLink> 
 
         </div> 
-        </div>
+        </div> */}
 
     </div>
 };
