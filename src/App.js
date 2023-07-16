@@ -45,9 +45,9 @@ function App() {
       //   };
       // }, []);
 
-      // useEffect(() => {
-      //   AOS.init();
-      // }, [])
+      useEffect(() => {
+        AOS.init();
+      }, [])
 
   return (
     <div className="App">
@@ -126,6 +126,7 @@ function App() {
       
         <div className='project-title' data-aos="fade-up"> 
         <p className='section-header'> UI/UX Projects </p>
+
       {/* <Player className='fork'
             autoplay
             loop
@@ -137,7 +138,7 @@ function App() {
           </div>
           
       <div className='cards' > 
-        <NavLink to={'../Storyboard'} target="_blank" style={{ textDecoration: 'none' }} data-aos="fade-right">
+        <NavLink to={'../Storyboard'} target="_blank" style={{ textDecoration: 'none' }} ata-aos="fade-right">
           
         <div className='plate2'> 
         <div className='overlay2'> 
