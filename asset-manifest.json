@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8b527fb7.css",
-    "main.js": "/portfolio/static/js/main.0965ffa7.js",
+    "main.css": "/portfolio/static/css/main.869828e3.css",
+    "main.js": "/portfolio/static/js/main.15a5cd35.js",
     "static/media/desktop-lofi-scroll.png": "/portfolio/static/media/desktop-lofi-scroll.ed9b8c509b164b3d6eb0.png",
     "static/media/homepage-original.png": "/portfolio/static/media/homepage-original.08b0a8f023c63b7b496a.png",
     "static/media/board1.png": "/portfolio/static/media/board1.611ce46ee6868ee9514f.png",
@@ -38,17 +38,18 @@
     "static/media/vsg.png": "/portfolio/static/media/vsg.eec97352c3734ffbb370.png",
     "static/media/animecard2.png": "/portfolio/static/media/animecard2.9ccaf6b745ef0181fcd7.png",
     "static/media/critique_1.svg": "/portfolio/static/media/critique_1.d1e28f3f0ad6b933c47ffc9eb12f5229.svg",
+    "static/media/home-page-image1.png": "/portfolio/static/media/home-page-image1.71c5d77ebec261b6d6a0.png",
     "static/media/personas.png": "/portfolio/static/media/personas.954db89b66f18812d70f.png",
     "static/media/persona-heads.png": "/portfolio/static/media/persona-heads.445926979e92ed76b3f8.png",
     "static/media/personas2.png": "/portfolio/static/media/personas2.55c6b858ef79274eb890.png",
     "static/media/noodles.png": "/portfolio/static/media/noodles.0579bb410ead7bcec33f.png",
     "static/media/dumpling.png": "/portfolio/static/media/dumpling.89ba30c14bb6da465c33.png",
     "index.html": "/portfolio/index.html",
-    "main.8b527fb7.css.map": "/portfolio/static/css/main.8b527fb7.css.map",
-    "main.0965ffa7.js.map": "/portfolio/static/js/main.0965ffa7.js.map"
+    "main.869828e3.css.map": "/portfolio/static/css/main.869828e3.css.map",
+    "main.15a5cd35.js.map": "/portfolio/static/js/main.15a5cd35.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b527fb7.css",
-    "static/js/main.0965ffa7.js"
+    "static/css/main.869828e3.css",
+    "static/js/main.15a5cd35.js"
   ]
 }
