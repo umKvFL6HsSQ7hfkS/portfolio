@@ -18,6 +18,8 @@ import mulan from "./images/home-page-image1.png";
 import Draggable from 'react-draggable';
 import { Resizable } from 're-resizable';
 import * as AOS from 'aos/dist/aos.js';
+import bao from "./images/bao.png";
+import lanterns from "./images/lanterns.png";
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -80,7 +82,8 @@ function App() {
           </div>
           <div className='blurb'> 
           <h2> Hey, there!</h2>
-            <a className='a-tag-content'>  I'm Kat. I'm a designer (both CS and clothing), skier, Brown grad, and lover of music. 
+            <a className='a-tag-content'>  I'm Kat Stephan. I'm a designer (both CS and clothing), skier, Brown grad, and lover of music. 
+            I've also recently started dabbling in Procreate, so please enjoy my doodles inspired by my Asian heritage!
               Feel free to reach out to me at katarina_stephan@alumni.brown.edu or check out my LinkedIn </a> 
               <a className = "linkedin" href='https://www.linkedin.com/in/kstephan28/' target={"_blank"}>here!</a>
           </div>
@@ -239,18 +242,15 @@ function App() {
       <h4>A little bit about me </h4> 
       
       <p>  I'm a 2023 graduate from Brown University studying Computer Science-Economics and History. I've always enjoyed 
-        creating things, so I thought it would be fun to take UI/UX, a class that allowed me to 
-        focus on just that! 
-    
-    I explored various aspects of the design process, from using Figma and experiencing 
-    critiques to learning HTML/CSS and React. This website is a culmination of my work from 
-    this semester. </p>
+        creating things, so in my senior fall, I thought it would be fun to take UI/UX, a class that allowed me to 
+        focus on just that! This class helped me build my web design skills, which I hope to show off in porfolio. </p>
     </div> 
+      <img src={lanterns} className='lanterns'/>
       </div>
 
     
       <div className='second-about' data-aos="fade-up">
-        
+      <img src={bao} className='bao'/>
         <div className='inspo-about'> 
         <h4>Where my work has taken me </h4> 
       
@@ -259,7 +259,7 @@ function App() {
             throughout these projects, taking inspiration from things I've seen and problems I've encountered. I hope you enjoy! </p>
     
         </div> 
-          <div className='lottie-container'> 
+          
               {/* <Player className='lottie-pot'
                   autoplay
                   loop
@@ -268,7 +268,8 @@ function App() {
                 >
                   <Controls visible={false}  />
               </Player> */}
-          </div>
+
+
       </div>
       </div>
       </section>
